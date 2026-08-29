@@ -7,6 +7,7 @@
   --pink: #D11371;
   --pink-light: #FF9EC4;   /* accessible pink for use on charcoal */
   --pink-wash: #FDF1F7;
+  --gold: #D4BF6C;        /* accent. Passes contrast on charcoal only, never as text on paper */
   --paper: #FAF8F6;
   --paper-2: #F2EEEA;
   --white: #FFFFFF;

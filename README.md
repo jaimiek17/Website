@@ -11,6 +11,7 @@ no dependencies. Open any `.html` file in a browser and it works.
 index.html              Home
 about.html              Jaimie's story and how she works
 work-with-me.html       All offers in one place, plus FAQ
+you-left-yourself-out.html  Workbook sales page, $27
 soul-map.html           Main sales page, $67
 pre-work-intensive.html 90 minute 1:1
 stripped-back.html      6 month container, waitlist only
@@ -37,6 +38,7 @@ Set in `css/site.css` under `:root`.
 | `--pink` | `#D11371` | Brand pink, on light backgrounds only |
 | `--pink-light` | `#FF9EC4` | Pink for use **on** charcoal. Brand pink fails contrast there |
 | `--paper` | `#FAF8F6` | Page background |
+| `--gold` | `#D4BF6C` | Accent from the July brand notes. Defined, deliberately unused. Passes contrast on charcoal only |
 
 Type is Fraunces for headings and Inter for body, both from Google Fonts.
 
@@ -67,7 +69,7 @@ mockup, a Soul Map sample spread, and a Narrative Loom deck photo.
 ## Placeholders
 
 Every unfinished item is marked in the HTML with a `todo` box that is visible on the
-page. There are 18 of them right now. Find them all:
+page. There are 19 of them right now. Find them all:
 
 ```
 grep -rn 'class="todo' *.html

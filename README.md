@@ -16,7 +16,7 @@ soul-map.html           Main sales page, $67
 pre-work-intensive.html 90 minute 1:1
 stripped-back.html      6 month container, waitlist only
 narrative-loom.html     44 card oracle deck
-free.html               Before the Strategy opt-in
+newsletter.html         Newsletter signup and socials
 contact.html            Contact form
 privacy.html            Privacy policy draft
 terms.html              Terms and disclaimer draft
@@ -69,7 +69,7 @@ mockup, a Soul Map sample spread, and a Narrative Loom deck photo.
 ## Placeholders
 
 Every unfinished item is marked in the HTML with a `todo` box that is visible on the
-page. There are 19 of them right now. Find them all:
+page. There are 15 of them right now. Find them all:
 
 ```
 grep -rn 'class="todo' *.html
@@ -77,16 +77,46 @@ grep -rn 'class="todo' *.html
 
 Delete the box once you have filled the real thing in.
 
+## READ THIS BEFORE TOUCHING DNS
+
+**`jaimiek.com` is currently serving the Beacons store.** The whole shop lives on it:
+
+```
+https://jaimiek.com/shop/f30220e2-...   The Soul Map          $65
+https://jaimiek.com/shop/914f53d0-...   You Left Yourself Out $27
+https://jaimiek.com/shop/ed50bdba-...   Pre-Work Intensive    $222
+https://jaimiek.com/shop/7a975967-...   The Narrative Loom    $12
+```
+
+Every buy button on this site points at one of those URLs. **If you repoint
+`jaimiek.com` at Netlify, all four checkouts break, the link in your bio breaks,
+and anyone who saved a product link gets a dead page.** Do not move the domain
+until the store has somewhere else to live.
+
+Three ways through it, best first:
+
+1. **Move the store to `shop.jaimiek.com`** in Beacons, confirm the four product
+   URLs work on the subdomain, then repoint `jaimiek.com` here and update the
+   links (one command, below). This is the clean end state.
+2. **Launch on the free Netlify subdomain first** (`something.netlify.app`), live
+   with it for a week, then do option 1. Zero risk, nothing breaks.
+3. **Put this site on `www.jaimiek.com`** and leave the store on the apex. It
+   works, but two domains for one brand is confusing and the `netlify.toml`
+   www redirect has to be removed first.
+
+Updating every checkout link after a store move is one command:
+
+```
+sed -i 's|https://jaimiek.com/shop/|https://shop.jaimiek.com/shop/|g' *.html
+```
+
 ## Deploying
 
 Netlify, free tier:
 
 1. Netlify, Add new site, Import an existing project, pick this repo and branch.
 2. Build command: leave empty. Publish directory: `.`
-3. Domain settings, add `jaimiek.com`, then point the domain's DNS at Netlify.
-
-`jaimiek.com` currently resolves but serves a 404, so the domain is registered and
-DNS is ready to be repointed.
+3. Domain: read the DNS warning above first.
 
 To make the contact and opt-in forms work on Netlify, add `netlify` and
 `netlify-honeypot="bot-field"` to each `<form>` tag, plus a hidden bot-field input.

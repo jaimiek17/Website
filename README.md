@@ -43,6 +43,18 @@ Type is Fraunces for headings and Inter for body, both from Google Fonts.
 Logo files in `assets/` were derived from the supplied PNG. The white background was
 made transparent and the mark was cropped out. The artwork itself was not redrawn.
 
+Photography in `assets/` was cropped from two supplied portraits, framed on the face
+rather than centre-cropped:
+
+| File | Used on | Crop |
+| --- | --- | --- |
+| `jaimie-hero.jpg` | Home hero, Pre-Work Intensive hero | 4:5 |
+| `jaimie-about.jpg` | About hero | 4:5 |
+| `jaimie-square.jpg` | Home, "What I actually do" | 1:1 |
+
+Three image slots are still placeholders, all product shots: the Soul Map cover
+mockup, a Soul Map sample spread, and a Narrative Loom deck photo.
+
 ## Voice rules baked into the copy
 
 - **No em dashes.** Anywhere. Ever.

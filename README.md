@@ -12,9 +12,8 @@ index.html              Home
 about.html              Jaimie's story and how she works
 work-with-me.html       All offers in one place, plus FAQ
 you-left-yourself-out.html  Workbook sales page, $27
-soul-map.html           Main sales page, $67
+soul-map.html           Main sales page, $65
 pre-work-intensive.html 90 minute 1:1
-stripped-back.html      6 month container, waitlist only
 narrative-loom.html     44 card oracle deck
 newsletter.html         Newsletter signup and socials
 contact.html            Contact form
@@ -32,15 +31,27 @@ netlify.toml            Headers, caching, www redirect
 
 Set in `css/site.css` under `:root`.
 
+Five values. Nothing outside this list.
+
 | Token | Value | Use |
 | --- | --- | --- |
-| `--charcoal` | `#323232` | Brand charcoal, dark bands, body text |
-| `--pink` | `#D11371` | Brand pink, on light backgrounds only |
-| `--pink-light` | `#FF9EC4` | Pink for use **on** charcoal. Brand pink fails contrast there |
-| `--paper` | `#FAF8F6` | Page background |
-| `--gold` | `#D4BF6C` | Accent from the July brand notes. Defined, deliberately unused. Passes contrast on charcoal only |
+| `--ink` | `#2A2A2A` | Dark bands, headings |
+| `--charcoal` | `#323232` | Body text |
+| `--pink` | `#D11371` | Accent, buttons, hairline rules |
+| `--blush` | `#F8F1EF` | Page background |
+| `--paper` | `#FDFBFA` | Contrast blocks |
 
-Type is Fraunces for headings and Inter for body, both from Google Fonts.
+Two families. Fraunces for display, worked hard across its optical-size and weight
+axes, and Archivo for body. No third font.
+
+The type scale is a 1.25 ratio, set in `:root` as `--t-h1` through `--t-small`.
+It resolves to exactly 68 / 44 / 26 / 24 / 19 / 16 at desktop and 40 / 30 / 22 / 20
+/ 18 / 16 at 375px. Nothing on the site goes below 16px. Do not invent sizes
+outside the scale.
+
+**One exception to the five colours.** On the ink bands the secondary button and
+its border use `--blush`, not `--pink`. Pink on ink is 2.8:1 and fails. Staying
+inside the palette meant reaching for blush rather than adding a sixth value.
 
 Logo files in `assets/` were derived from the supplied PNG. The white background was
 made transparent and the mark was cropped out. The artwork itself was not redrawn.
@@ -66,16 +77,13 @@ mockup, a Soul Map sample spread, and a Narrative Loom deck photo.
 - Astrology and Human Design stay background interpretive tools, never the product.
 - Nothing invented: no fake testimonials, no unverified statistics, no made-up numbers.
 
-## Placeholders
+## Open questions
 
-Every unfinished item is marked in the HTML with a `todo` box that is visible on the
-page. There are 15 of them right now. Find them all:
+The visible `todo` boxes were removed from the pages. They rendered to visitors.
+Everything they said is preserved in `NOTES.md`.
 
-```
-grep -rn 'class="todo' *.html
-```
-
-Delete the box once you have filled the real thing in.
+`stripped-back.html` still exists but is unlinked, `noindex`, and out of the
+sitemap. It goes back on the site after one real test session has run.
 
 ## READ THIS BEFORE TOUCHING DNS
 

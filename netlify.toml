@@ -28,9 +28,5 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-# Send www to the bare domain
-[[redirects]]
-  from = "https://www.jaimiek.com/*"
-  to = "https://jaimiek.com/:splat"
-  status = 301
-  force = true
+# No www redirect while the site lives on a Netlify subdomain. Add one back
+# only when a custom domain is actually attached, or it is dead config.

@@ -85,76 +85,54 @@ Everything they said is preserved in `NOTES.md`.
 `stripped-back.html` still exists but is unlinked, `noindex`, and out of the
 sitemap. It goes back on the site after one real test session has run.
 
-## READ THIS BEFORE TOUCHING DNS
+## The domain, and why the site is not on it
 
-**`jaimiek.com` is not parked. It is serving the Beacons store.** The whole shop
-lives on it, and every buy button on this site points at one of these:
+`jaimiek.com` was bought through Beacons, and Jaimie has no access to its DNS
+records. That decides the plan.
 
-```
-https://jaimiek.com/shop/f30220e2-...   The Soul Map          $65
-https://jaimiek.com/shop/914f53d0-...   You Left Yourself Out $27
-https://jaimiek.com/shop/ed50bdba-...   Pre-Work Intensive    $222
-https://jaimiek.com/shop/7a975967-...   The Narrative Loom    $12
-```
-
-Move the domain before the store has somewhere else to live and all four
-checkouts break, along with anything anyone has saved.
-
-### What is actually true about the domain
-
-Checked against public DNS and registry records on 2026-08-31:
+Checked against public DNS and the .com registry on 2026-08-31:
 
 | | |
 | --- | --- |
-| Registrar | Name.com, Inc. Beacons sells domains through them. |
+| Registrar | Name.com, Inc. Beacons sells through them. |
 | Nameservers | `ns1bqx` / `ns2fln` / `ns3bfm` / `ns4lpv.name.com` |
 | Apex and www | Both A records to `34.49.161.242`, which is Beacons |
 | Registered | 2026-07-31 |
-| Registry status | `clientTransferProhibited`, the standard registrar lock |
+| Registry status | `clientTransferProhibited` |
 
-Two things follow from that.
+**The site ships on a Netlify subdomain.** Nothing else is available until the
+domain can be moved, and nothing else is needed to start selling.
 
-**You do not need to transfer the domain.** DNS is hosted at Name.com, which is a
-full registrar with proper record editing. The end state below is reachable by
-editing records, not by moving anything.
+**The store keeps working exactly as it is.** All four checkout links point at
+`jaimiek.com/shop/...` and stay there. Because the domain is not moving, the
+risk that used to sit on this project is gone. Do not rewrite those links.
 
-**You could not transfer it yet even if you wanted to.** ICANN bars a transfer for
-60 days after registration. That clears around 2026-09-29. This is a registry
-rule, not Beacons being awkward.
+### When the domain can be moved
 
-### The one thing to find out
+ICANN bars a registrar transfer for 60 days after registration. That clears
+around **2026-09-29**. At that point, ask Beacons to unlock the domain and give
+you the EPP authorisation code, then transfer it to a registrar where you hold
+the account, such as Cloudflare or Porkbun. After that you control DNS and can
+put the site on the apex with the store on `shop.jaimiek.com`.
 
-Whether you can edit DNS records for `jaimiek.com`, either inside the Beacons
-domain settings or in a Name.com account of your own. That single answer decides
-everything else, and it is a question for Beacons support.
+Also worth asking Beacons whether the domain is tied to the subscription, and
+what happens to it if the subscription ever lapses.
 
-Worth asking them at the same time whether the domain is tied to your Beacons
-subscription, and what happens to it if you ever stop paying for Beacons.
+### Setting the address
 
-### If you can edit DNS
+Canonical, `og:url` and `og:image` tags have been removed from every page. They
+pointed at `jaimiek.com`, which now serves the Beacons store, so they were
+telling search engines the canonical version of each page was somebody else's
+content. Leaving them in would have been worse than having none.
 
-1. Point the apex and `www` at Netlify.
-2. Add `shop.jaimiek.com` pointing at Beacons, and set that as the store's custom
-   domain in Beacons.
-3. Update the four checkout links with the one command below.
-4. Confirm all four product pages load on the subdomain **before** step 1.
-
-### If you cannot edit DNS
-
-Launch on the free Netlify subdomain and leave `jaimiek.com` on Beacons for now.
-Nothing breaks, the site is live, and you can revisit after 2026-09-29 when a
-transfer to a registrar you control becomes possible.
-
-### Either way, do this first
-
-Deploy to the free Netlify subdomain and live with it for a week. It costs
-nothing and risks nothing.
-
-Updating every checkout link after a store move is one command:
+Run this once the real address is known, and again if it ever changes:
 
 ```
-sed -i 's|https://jaimiek.com/shop/|https://shop.jaimiek.com/shop/|g' *.html
+./set-domain.sh jaimiekozyra.netlify.app
 ```
+
+It writes the canonical and Open Graph tags on all thirteen pages and rewrites
+`sitemap.xml` and `robots.txt`. It does not touch the `/shop/` checkout links.
 
 ## Deploying
 
@@ -162,7 +140,7 @@ Netlify, free tier:
 
 1. Netlify, Add new site, Import an existing project, pick this repo and branch.
 2. Build command: leave empty. Publish directory: `.`
-3. Domain: read the DNS warning above first.
+3. Domain: leave it on the Netlify subdomain. Then run `./set-domain.sh <your-subdomain>.netlify.app` and push.
 
 To make the contact and opt-in forms work on Netlify, add `netlify` and
 `netlify-honeypot="bot-field"` to each `<form>` tag, plus a hidden bot-field input.

@@ -31,9 +31,9 @@
   --wrap: 1120px;
   --measure: 65ch;
   --measure-lede: 55ch;
-  --pad-y: 80px;
+  --pad-y: 60px;
 }
-@media (min-width: 800px) { :root { --pad-y: 140px; } }
+@media (min-width: 800px) { :root { --pad-y: 96px; } }
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -55,7 +55,7 @@ img { max-width: 100%; height: auto; display: block; }
 h1, h2, h3, h4 {
   font-family: var(--display);
   color: var(--ink);
-  margin: 0 0 0.5em;
+  margin: 0 0 0.4em;
   text-wrap: balance;
 }
 h1 {
@@ -105,7 +105,6 @@ strong, b { font-weight: 600; }
 
 .quote {
   font-family: var(--display);
-  font-style: italic;
   font-variation-settings: 'opsz' 144, 'wght' 400;
   font-size: var(--t-quote);
   line-height: 1.2;
@@ -142,7 +141,7 @@ section { padding-block: var(--pad-y); }
 .g3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 /* ---------- bands. blush, paper, ink, alternating ---------- */
-.band-paper2, .band-wash { background: var(--paper); }
+.band-paper2, .band-wash { background: var(--blush); }
 .band-dark { background: var(--ink); color: var(--blush); }
 .band-dark h1, .band-dark h2, .band-dark h3, .band-dark h4 { color: var(--blush); }
 .band-dark .lede, .band-dark .muted, .band-dark .quote-cite { color: var(--blush-muted); }
@@ -265,6 +264,14 @@ section { padding-block: var(--pad-y); }
 .lag .lag-key::before { color: var(--pink); }
 .lag .lag-key h3 { color: var(--pink); }
 
+.label {
+  font-family: var(--display); font-style: italic;
+  font-variation-settings: 'opsz' 24, 'wght' 400;
+  font-size: 19px; line-height: 1.35; color: var(--pink);
+  margin: 0 0 0.6rem;
+}
+.band-dark .label { color: var(--blush); }
+
 /* ---------- PART 5 · shelf. no cards, no boxes, no shadows ---------- */
 .shelf { border-top: 1px solid var(--hairline); }
 .shelf-item {
@@ -308,7 +315,7 @@ section { padding-block: var(--pad-y); }
 .card p { max-width: none; }
 .card .card-foot { margin-top: auto; padding-top: 1.25rem; }
 .band-dark .card { background: transparent; border-color: var(--hairline-dark); color: var(--blush); }
-.band-paper2 .card, .band-wash .card { background: var(--blush); }
+
 
 .tag {
   display: inline-block; font-size: var(--t-small); font-weight: 500;

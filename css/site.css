@@ -272,6 +272,39 @@ section { padding-block: var(--pad-y); }
 }
 .band-dark .label { color: var(--blush); }
 
+
+/* ---------- v6 · the one script moment ---------- */
+.script {
+  font-family: 'Ephesis', 'Fraunces', cursive;
+  font-size: clamp(32px, 20px + 3.4vw, 54px);
+  line-height: 1.35;
+  color: var(--pink);
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+.band-quote { background: var(--paper); padding-block: 64px; }
+@media (min-width: 800px) { .band-quote { padding-block: 100px; } }
+
+.split-photo { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 860px) { .split-photo { grid-template-columns: 340px 1fr; gap: 3.5rem; } }
+
+.portrait-round {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  max-width: 340px;
+  width: 100%;
+  border: 4px solid var(--pink);
+}
+
+/* PART 10 · width variation carries the rhythm now that two dark bands are gone */
+.measure { max-width: 65ch; }
+.wide-list { max-width: 860px; }
+
+/* PART 7.4 · close the hole above the shelf */
+.pad-top-sm { padding-top: 80px; }
+
 /* ---------- PART 5 · shelf. no cards, no boxes, no shadows ---------- */
 .shelf { border-top: 1px solid var(--hairline); }
 .shelf-item {
@@ -295,6 +328,9 @@ section { padding-block: var(--pad-y); }
   font-size: var(--t-h3); color: var(--ink); margin: 0;
 }
 .price s { font-family: var(--body); font-size: var(--t-small); color: var(--charcoal-muted); }
+
+/* homepage runs box free */
+.no-box .card { border: 0; background: transparent; padding-inline: 0; }
 
 /* ---------- lists ---------- */
 .ticks { list-style: none; padding: 0; margin: 0 0 1.25rem; display: grid; gap: 0.85rem; max-width: var(--measure); }

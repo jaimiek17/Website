@@ -31,9 +31,9 @@
   --wrap: 1120px;
   --measure: 65ch;
   --measure-lede: 55ch;
-  --pad-y: 60px;
+  --pad-y: 72px;
 }
-@media (min-width: 800px) { :root { --pad-y: 96px; } }
+@media (min-width: 800px) { :root { --pad-y: 120px; } }
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -55,11 +55,12 @@ img { max-width: 100%; height: auto; display: block; }
 h1, h2, h3, h4 {
   font-family: var(--display);
   color: var(--ink);
+  max-width: 800px;
   margin: 0 0 0.4em;
   text-wrap: balance;
 }
 h1 {
-  font-size: var(--t-h1);
+  font-size: clamp(60px, 49.09px + 2.909vw, 84px);
   font-variation-settings: 'opsz' 144, 'wght' 600;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -83,7 +84,7 @@ h4 {
   margin-bottom: 0.9em;
 }
 
-p { margin: 0 0 1.1em; max-width: var(--measure); }
+p { margin: 0 0 1.1em; max-width: 620px; }
 p:last-child { margin-bottom: 0; }
 .center p, .center .lede { margin-inline: auto; }
 
@@ -91,7 +92,7 @@ p:last-child { margin-bottom: 0; }
   font-size: var(--t-lede);
   line-height: 1.5;
   color: var(--charcoal-muted);
-  max-width: var(--measure-lede);
+  max-width: 620px;
 }
 .muted { color: var(--charcoal-muted); }
 .small { font-size: var(--t-small); }
@@ -228,6 +229,7 @@ section { padding-block: var(--pad-y); }
 
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; padding-block: calc(var(--pad-y) * 0.7); }
+@media (min-width: 860px) { .hero-inner.split { grid-template-columns: 55% 45%; } }
 .hero-mark {
   position: absolute; right: -6%; top: -10%;
   width: max(400px, 42%); opacity: 0.06;
@@ -264,20 +266,73 @@ section { padding-block: var(--pad-y); }
 .lag .lag-key::before { color: var(--pink); }
 .lag .lag-key h3 { color: var(--pink); }
 
+/* Level 1 · the label */
 .label {
-  font-family: var(--display); font-style: italic;
-  font-variation-settings: 'opsz' 24, 'wght' 400;
-  font-size: 19px; line-height: 1.35; color: var(--pink);
-  margin: 0 0 0.6rem;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin: 0 0 1.1rem;
 }
+/* pink on ink is 2.8:1 and fails, so the label goes blush on dark bands */
 .band-dark .label { color: var(--blush); }
 
+/* PART 6 · the only divider on the page */
+.divider {
+  width: 30%; max-width: 360px; height: 1px; border: 0;
+  background: rgba(209, 19, 113, 0.2); margin: 0 auto;
+}
 
-/* ---------- v6 · the one script moment ---------- */
+/* PART 4 · the shelf, rebuilt as centred stacks */
+.shelf { border-top: 0; }
+.shelf-item {
+  display: block; text-align: center; border: 0; padding: 0;
+  max-width: 620px; margin-inline: auto;
+}
+.shelf-item + .shelf-item { margin-top: 64px; }
+.shelf-item + .shelf-item::before {
+  content: ""; display: block; width: 30%; max-width: 360px; height: 1px;
+  background: rgba(209, 19, 113, 0.2); margin: 0 auto 64px;
+}
+.offer-cond {
+  font-family: var(--display); font-style: italic;
+  font-variation-settings: 'opsz' 72; font-weight: 400;
+  font-size: 21px; line-height: 1.35; color: var(--pink); margin: 0 0 0.7rem;
+}
+.offer-name {
+  font-family: var(--display); font-variation-settings: 'opsz' 72, 'wght' 600;
+  font-size: clamp(30px, 24px + 1.5vw, 38px); line-height: 1.15;
+  color: var(--charcoal); margin: 0 0 0.6rem; max-width: none;
+}
+.offer-name .price {
+  font-family: var(--display); font-variation-settings: 'opsz' 24, 'wght' 500;
+  font-size: 26px; color: var(--pink);
+}
+.offer-sub {
+  font-family: var(--body); font-weight: 600; font-size: 13px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--charcoal-muted); margin: 0 0 1.1rem; max-width: none;
+}
+.offer-desc { max-width: 55ch; margin: 0 auto 1.6rem; }
+.offer-link {
+  display: inline-block; font-family: var(--body); font-weight: 600;
+  font-size: 19px; color: var(--charcoal); text-decoration: none;
+  border-bottom: 2px solid var(--pink); padding-bottom: 6px;
+}
+.offer-link:hover { color: var(--pink); }
+
+
+/* ---------- v7 · the one script moment ---------- */
 .script {
-  font-family: 'Ephesis', 'Fraunces', cursive;
-  font-size: clamp(32px, 20px + 3.4vw, 54px);
-  line-height: 1.35;
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144;
+  font-weight: 400;
+  font-size: clamp(34px, 24px + 2.67vw, 56px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
   color: var(--pink);
   max-width: 900px;
   margin-inline: auto;
@@ -299,28 +354,13 @@ section { padding-block: var(--pad-y); }
 }
 
 /* PART 10 · width variation carries the rhythm now that two dark bands are gone */
-.measure { max-width: 65ch; }
+.measure { max-width: 620px; }
 .wide-list { max-width: 860px; }
 
 /* PART 7.4 · close the hole above the shelf */
 .pad-top-sm { padding-top: 80px; }
 
-/* ---------- PART 5 · shelf. no cards, no boxes, no shadows ---------- */
-.shelf { border-top: 1px solid var(--hairline); }
-.shelf-item {
-  display: grid; grid-template-columns: 1fr; gap: 0.75rem;
-  padding: 2rem 0; border-bottom: 1px solid var(--hairline);
-}
-@media (min-width: 860px) {
-  .shelf-item { grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-}
-.shelf-when {
-  font-family: var(--display); font-style: italic;
-  font-variation-settings: 'opsz' 72, 'wght' 400;
-  font-size: 20px; line-height: 1.35; color: var(--ink); margin: 0;
-}
-.shelf-body p { margin-bottom: 1rem; }
-.shelf-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; align-items: baseline; }
+/* the v6 two column shelf is superseded by the centred stacks above */
 .arrow::after { content: " \2192"; }
 
 .price {
@@ -331,6 +371,8 @@ section { padding-block: var(--pad-y); }
 
 /* homepage runs box free */
 .no-box .card { border: 0; background: transparent; padding-inline: 0; }
+.no-box blockquote.testimonial { border-left: 0; padding-left: 0; text-align: center; }
+.no-box .card, .no-box blockquote.testimonial { box-shadow: none; }
 
 /* ---------- lists ---------- */
 .ticks { list-style: none; padding: 0; margin: 0 0 1.25rem; display: grid; gap: 0.85rem; max-width: var(--measure); }
@@ -442,6 +484,16 @@ textarea { min-height: 150px; resize: vertical; }
   margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--hairline-dark);
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; justify-content: space-between;
   font-size: var(--t-small); color: var(--blush-muted);
+}
+
+/* PART 6 · centred on mobile, except the two lists */
+@media (max-width: 859px) {
+  main { text-align: center; }
+  main p, main .lede, main h1, main h2, main h3, main .label, main .measure { margin-inline: auto; }
+  main .ticks, main .lag { text-align: left; }
+  main .form { text-align: left; margin-inline: auto; }
+  main .btn-row { justify-content: center; }
+  main .split-photo { justify-items: center; }
 }
 
 /* ---------- PART 5 · no motion ---------- */

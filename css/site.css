@@ -358,8 +358,17 @@ section { padding-block: var(--pad-y); }
 .has-mark > .wrap, .has-mark > .narrow { position: relative; z-index: 1; }
 
 /* v8 · hero photo is square edged, 3:4, and nothing pink touches it */
-.portrait-hero { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0; border: 0; }
-.ph.portrait-hero { aspect-ratio: 3 / 4; }
+/* The source is 864x1688. A true 3:4 crop would cut a third of the height and
+   lose either her head or the letters, so the photo keeps its own ratio. */
+.portrait-hero {
+  width: 100%; height: auto; display: block;
+  border-radius: 0; border: 0;
+  max-width: 420px; margin-inline: auto;
+}
+@media (max-width: 859px) {
+  .hero-photo { width: 100vw; max-width: 100vw; margin-inline: calc(50% - 50vw); }
+  .hero-photo .portrait-hero { max-width: none; }
+}
 
 .portrait-round {
   border-radius: 50%;

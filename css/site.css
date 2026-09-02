@@ -345,6 +345,22 @@ section { padding-block: var(--pad-y); }
 .split-photo { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: start; }
 @media (min-width: 860px) { .split-photo { grid-template-columns: 340px 1fr; gap: 3.5rem; } }
 
+/* v8 · story pull quote. Fraunces 32px, charcoal, not pink. */
+.pull-quote {
+  font-family: var(--display);
+  font-variation-settings: 'opsz' 72, 'wght' 600;
+  font-size: 32px; line-height: 1.25; color: var(--charcoal);
+  max-width: 620px; margin: 32px 0;
+}
+
+/* v8 · logo mark behind a section, cropped past the right edge */
+.has-mark { position: relative; overflow: hidden; }
+.has-mark > .wrap, .has-mark > .narrow { position: relative; z-index: 1; }
+
+/* v8 · hero photo is square edged, 3:4, and nothing pink touches it */
+.portrait-hero { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0; border: 0; }
+.ph.portrait-hero { aspect-ratio: 3 / 4; }
+
 .portrait-round {
   border-radius: 50%;
   aspect-ratio: 1 / 1;

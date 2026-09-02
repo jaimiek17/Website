@@ -400,7 +400,7 @@ section { padding-block: var(--pad-y); }
 /* PART 1 · the three hero lines */
 .hero-line-1 {
   font-family: var(--display); font-variation-settings: 'opsz' 144, 'wght' 600;
-  font-size: clamp(44px, 34.9px + 2.42vw, 72px);
+  font-size: clamp(44px, 31.27px + 3.394vw, 72px);
   line-height: 1.08; letter-spacing: -0.02em; color: var(--charcoal);
   max-width: 800px; margin: 0 0 0.35em; text-wrap: balance;
 }

@@ -133,9 +133,11 @@
     </div>
     <div>
       <form class="form" method="post" action="#" data-optin>
-        <div><label for="sb-name">First name</label><input id="sb-name" name="fields[first_name]" type="text" autocomplete="given-name"></div>
-        <div><label for="sb-email">Email</label><input id="sb-email" name="email_address" type="email" autocomplete="email" required></div>
-        <div><label for="sb-where">Where are you right now, in a sentence?</label><textarea id="sb-where" name="fields[where]" style="min-height:110px"></textarea></div>
+        <div><label for="sb-name">First name</label><input id="sb-name" name="FIRSTNAME" type="text" autocomplete="given-name"></div>
+        <div><label for="sb-email">Email</label><input id="sb-email" name="EMAIL" type="email" autocomplete="email" required></div>
+        <div><label for="sb-where">Where are you right now, in a sentence?</label><textarea id="sb-where" name="WHERE_NOW" style="min-height:110px"></textarea></div>
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        <input type="hidden" name="locale" value="en">
         <button class="btn" type="submit">Put me on the list</button>
         <p class="form-note">Unsubscribe any time.</p>
       </form>

@@ -300,12 +300,14 @@
       <form class="form" method="post" action="#" data-optin>
         <div>
           <label for="home-name">First name</label>
-          <input id="home-name" name="fields[first_name]" type="text" autocomplete="given-name">
+          <input id="home-name" name="FIRSTNAME" type="text" autocomplete="given-name">
         </div>
         <div>
           <label for="home-email">Email</label>
-          <input id="home-email" name="email_address" type="email" autocomplete="email" required>
+          <input id="home-email" name="EMAIL" type="email" autocomplete="email" required>
         </div>
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        <input type="hidden" name="locale" value="en">
         <button class="btn btn-foil" type="submit">Sign me up</button>
         <div class="socials-row">
           <a class="social-icon" href="https://www.tiktok.com/@jaimiek_preworkcoach" rel="me noopener" aria-label="Jaimie on TikTok">

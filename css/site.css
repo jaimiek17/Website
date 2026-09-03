@@ -162,10 +162,22 @@ section { padding-block: var(--pad-y); }
 .band-dark a:hover { color: #FFFFFF; }
 
 /* ---------- rules ---------- */
-.rule { width: 56px; height: 2px; background: var(--pink); border: 0; margin: 0 0 1.75rem; }
-.rule.center { margin-inline: auto; }
-.hairline { border: 0; border-top: 1px solid var(--hairline); margin: 0; }
-.band-dark .hairline { border-top-color: var(--hairline-dark); }
+/* v11 PART 3 · dividers are wider and heavier, and they are foil */
+.rule {
+  width: 180px;
+  height: 3px;
+  border: none;
+  background: var(--pink-foil);
+  margin: 0 0 28px 0;
+}
+.rule.center, .center .rule { margin: 0 auto 28px auto; }
+
+/* the hairline hr carries the same treatment between sections */
+.hairline { width: 180px; height: 3px; border: none; background: var(--pink-foil); }
+.center .hairline { margin-inline: auto; }
+/* a card is not a section, so hairlines inside one stay hairlines */
+.card .hairline { width: auto; height: 0; background: none; border-top: 1px solid var(--hairline); }
+.band-dark .card .hairline { border-top-color: var(--hairline-dark); }
 
 /* ---------- buttons. 2px radius, 44px tap target ---------- */
 .btn {
@@ -303,8 +315,8 @@ section { padding-block: var(--pad-y); }
 
 /* PART 6 · the only divider on the page */
 .divider {
-  width: 30%; max-width: 360px; height: 1px; border: 0;
-  background: rgba(209, 19, 113, 0.2); margin: 0 auto;
+  width: 180px; height: 3px; border: none;
+  background: var(--pink-foil); margin: 0 auto 28px auto;
 }
 
 /* PART 4 · the shelf, rebuilt as centred stacks */
@@ -395,7 +407,7 @@ section { padding-block: var(--pad-y); }
 }
 
 /* PART 3 · every hairline divider is foil now */
-.divider, .shelf-item + .shelf-item::before { background: var(--pink-foil); }
+.shelf-item + .shelf-item::before { background: var(--pink-foil); }
 
 /* PART 1 · the three hero lines */
 .hero-line-1 {
@@ -533,7 +545,19 @@ blockquote.testimonial p {
   font-family: var(--display); font-variation-settings: 'opsz' 24, 'wght' 400;
   font-size: var(--t-h3); line-height: 1.4; color: var(--ink); max-width: none;
 }
-blockquote.testimonial footer { font-size: var(--t-small); color: var(--charcoal-muted); font-weight: 500; }
+/* v11 PART 4 · four testimonials, two by two, no boxes */
+.testimonial-grid { display: grid; grid-template-columns: 1fr; gap: 2.75rem; }
+@media (min-width: 760px) {
+  .testimonial-grid { grid-template-columns: 1fr 1fr; gap: 3rem 3.5rem; }
+}
+.testimonial-grid blockquote.testimonial {
+  margin: 0; padding: 0; border: 0; box-shadow: none;
+}
+blockquote.testimonial footer {
+  font-family: var(--body); font-size: 16px; font-weight: 400;
+  color: var(--charcoal-muted);
+}
+blockquote.testimonial footer .who { font-weight: 600; }
 
 /* ---------- faq ---------- */
 details.faq { border-bottom: 1px solid var(--hairline); padding: 1.4rem 0; max-width: var(--measure); }

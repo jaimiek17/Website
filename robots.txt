@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jaimiek.com/sitemap.xml
+Sitemap: https://deluxe-dragon-8bdf63.netlify.app/sitemap.xml

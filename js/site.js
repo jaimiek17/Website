@@ -74,7 +74,7 @@
         note.className = 'optin-done';
         note.setAttribute('role', 'status');
         note.textContent = form.getAttribute('data-done') ||
-          "Now go check your inbox. There's a link in there you need to click, or you won't hear from me. Look in spam if it hasn't shown up.";
+          "Almost done. Click the link in the email I just sent and you're in. Check spam if you don't see it.";
         form.parentNode.replaceChild(note, form);
       });
     })(forms[i]);

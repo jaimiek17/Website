@@ -583,6 +583,13 @@ blockquote.testimonial p {
   max-width: none; margin: 2rem 0 0;
 }
 
+/* the line that replaces an opt-in form once it has been sent */
+.optin-done {
+  font-family: var(--display); font-variation-settings: 'opsz' 24, 'wght' 400;
+  font-size: var(--t-lede); line-height: 1.45; margin: 0; max-width: 34em;
+}
+.band-dark .optin-done { color: var(--blush); }
+
 /* product shots. Square, never cropped, never boxed. */
 .product-shot {
   display: block; width: 100%; max-width: 460px; height: auto;

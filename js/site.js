@@ -38,3 +38,45 @@
   var el = document.querySelectorAll('[data-year]');
   for (var i = 0; i < el.length; i++) { el[i].textContent = String(new Date().getFullYear()); }
 })();
+
+// Opt-in forms post to Brevo, which answers with raw JSON. Submitting into a
+// hidden iframe keeps the visitor on the page, and the message below replaces
+// the form once the response lands. Without JavaScript the signup still goes
+// through, it just gives no feedback.
+(function () {
+  var forms = document.querySelectorAll('form[data-optin]');
+  if (!forms.length) return;
+
+  var frame = document.createElement('iframe');
+  frame.name = 'optin-sink';
+  frame.setAttribute('aria-hidden', 'true');
+  frame.setAttribute('tabindex', '-1');
+  frame.style.cssText = 'position:absolute;width:0;height:0;border:0;left:-9999px';
+  document.body.appendChild(frame);
+
+  for (var i = 0; i < forms.length; i++) {
+    (function (form) {
+      form.target = 'optin-sink';
+      var sent = false;
+
+      form.addEventListener('submit', function () {
+        var email = form.querySelector('input[type=email]');
+        if (email && !email.value) return;
+        sent = true;
+        var btn = form.querySelector('button[type=submit]');
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending'; }
+      });
+
+      frame.addEventListener('load', function () {
+        if (!sent) return;
+        sent = false;
+        var note = document.createElement('p');
+        note.className = 'optin-done';
+        note.setAttribute('role', 'status');
+        note.textContent = form.getAttribute('data-done') ||
+          "Now go check your inbox. There's a link in there you need to click, or you won't hear from me. Look in spam if it hasn't shown up.";
+        form.parentNode.replaceChild(note, form);
+      });
+    })(forms[i]);
+  }
+})();

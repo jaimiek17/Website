@@ -61,7 +61,10 @@
 </div>
     <div class="card">
       <h3>Send a message</h3>
-      <form class="form" method="post" action="#" data-contact style="max-width:none">
+      <form class="form" method="post" action="/" name="contact" data-contact
+            data-netlify="true" data-netlify-honeypot="bot-field" style="max-width:none">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
         <div><label for="c-name">Your name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
         <div><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
         <div><label for="c-topic">What is this about?</label>

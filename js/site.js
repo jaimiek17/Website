@@ -80,3 +80,36 @@
     })(forms[i]);
   }
 })();
+
+// The contact form posts to Netlify Forms. Submitting in the background keeps
+// her on the page, and the note below replaces the form once it lands.
+(function () {
+  var form = document.querySelector('form[data-contact]');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending'; }
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      var note = document.createElement('p');
+      note.className = 'optin-done';
+      note.setAttribute('role', 'status');
+      note.textContent = "That is with me. I read everything myself, so give me a couple of business days.";
+      form.parentNode.replaceChild(note, form);
+    }).catch(function () {
+      if (btn) { btn.disabled = false; btn.textContent = 'Send it'; }
+      var err = form.querySelector('.form-error') || document.createElement('p');
+      err.className = 'form-error form-note';
+      err.setAttribute('role', 'alert');
+      err.textContent = "That did not send. Email me directly at jaimiek17@gmail.com and I will get it.";
+      if (!err.parentNode) form.appendChild(err);
+    });
+  });
+})();

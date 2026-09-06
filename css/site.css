@@ -594,6 +594,10 @@ blockquote.testimonial p {
 .tight-list li { line-height: 1.6; }
 .tight-list.ticks { gap: 20px; }
 
+/* FINAL 17.4 · the note under the signup heading */
+.box-note { font-size: 17px; color: var(--charcoal-muted); margin: 0 0 1.25rem; }
+.band-dark .box-note { color: var(--blush-muted); }
+
 /* v14 5.1 · the pull quote that closes Why I do this */
 .big-quote {
   font-family: var(--display); font-variation-settings: 'opsz' 72, 'wght' 500;

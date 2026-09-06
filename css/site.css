@@ -583,6 +583,35 @@ blockquote.testimonial p {
   max-width: none; margin: 2rem 0 0;
 }
 
+/* v14 0.1 · the fourth hero line sits under the third, quieter */
+.hero-line-4 {
+  font-family: var(--body); font-size: clamp(16px, 15.3px + 0.18vw, 17.5px);
+  line-height: 1.5; color: var(--charcoal-muted);
+  max-width: 46ch; margin: 0.6em 0 0;
+}
+
+/* v14 0.2 · the sound familiar list runs tighter */
+.tight-list li { line-height: 1.6; }
+.tight-list.ticks { gap: 20px; }
+
+/* v14 5.1 · the pull quote that closes Why I do this */
+.big-quote {
+  font-family: var(--display); font-variation-settings: 'opsz' 72, 'wght' 500;
+  font-size: clamp(28px, 22.5px + 1.45vw, 40px); line-height: 1.2;
+  color: var(--charcoal); max-width: 22ch; margin: 40px 0;
+}
+.band-dark .big-quote { color: var(--blush); }
+
+/* v14 10 · the line that closes the story on About */
+.story-quote {
+  font-family: var(--display); font-variation-settings: 'opsz' 72, 'wght' 500;
+  font-size: clamp(24px, 20.4px + 0.97vw, 32px); line-height: 1.25;
+  color: var(--charcoal); max-width: 26ch; margin: 2rem 0 0;
+}
+
+/* v14 6.3 · the line that closes the self-trust card */
+.self-trust-close { margin-top: 1.25rem; }
+
 /* v13 PART 4 · the scope note, set apart at the foot of About */
 .scope-note { padding-block: 48px; }
 .scope-note p {

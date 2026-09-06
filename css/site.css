@@ -594,6 +594,11 @@ blockquote.testimonial p {
 .tight-list li { line-height: 1.6; }
 .tight-list.ticks { gap: 20px; }
 
+/* the four sample cards from the deck */
+.card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+@media (min-width: 900px) { .card-grid { grid-template-columns: repeat(4, 1fr); gap: 1.75rem; } }
+.deck-card { display: block; width: 100%; height: auto; border-radius: 4px; }
+
 /* FINAL 17.4 · the note under the signup heading */
 .box-note { font-size: 17px; color: var(--charcoal-muted); margin: 0 0 1.25rem; }
 .band-dark .box-note { color: var(--blush-muted); }

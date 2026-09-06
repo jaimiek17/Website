@@ -19,7 +19,7 @@ echo "Setting site address to $BASE"
 
 for f in *.html; do
   # clear anything a previous run left behind
-  sed -i '/<link rel="canonical"/d; /<meta property="og:url"/d; /<meta property="og:image"/d' "$f"
+  sed -i '/<link rel="canonical"/d; /<meta property="og:url"/d; /<meta property="og:image/d' "$f"
 
   slug=$f
   [ "$f" = "index.html" ] && slug=""
@@ -28,7 +28,10 @@ for f in *.html; do
   sed -i "s|<meta property=\"og:type\"|<link rel=\"canonical\" href=\"$BASE/$slug\">\n<meta property=\"og:type\"|" "$f"
   sed -i "/<meta property=\"og:description\"/a\\
 <meta property=\"og:url\" content=\"$BASE/$slug\">\\
-<meta property=\"og:image\" content=\"$BASE/assets/logo-full.png\">" "$f"
+<meta property=\"og:image\" content=\"$BASE/assets/og-card.jpg\">\\
+<meta property=\"og:image:width\" content=\"1200\">\\
+<meta property=\"og:image:height\" content=\"630\">\\
+<meta property=\"og:image:alt\" content=\"Jaimie Kozyra. You are not lost, you just have not met her yet.\">" "$f"
 done
 
 # stripped-back.html is unlinked and noindex, so it stays out of the sitemap

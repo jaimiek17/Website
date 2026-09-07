@@ -726,7 +726,8 @@ textarea { min-height: 150px; resize: vertical; }
 .btn-block { display: block; width: 100%; text-align: center; }
 
 .form-sign {
-  font-family: var(--display); font-style: italic; font-size: 1.15rem;
+  font-family: "Caveat", var(--display), cursive;
+  font-size: clamp(1.15rem, 0.86rem + 1.2vw, 1.65rem);
   text-align: center; color: var(--charcoal); margin: 1.75rem 0 0;
 }
 .form-sign::after {

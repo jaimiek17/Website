@@ -9,8 +9,10 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Short cache. The version query on the link is what makes a change land
+# immediately; this stops a stale copy sticking around for a week if I forget.
 /css/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=3600, must-revalidate
 
 /js/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=3600, must-revalidate

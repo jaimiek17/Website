@@ -17,6 +17,9 @@ HOST=$(printf '%s' "$1" | sed 's|^https\{0,1\}://||; s|/$||')
 BASE="https://$HOST"
 echo "Setting site address to $BASE"
 
+# The site itself lives in public/. Everything below works from in there.
+cd "$(dirname "$0")/public"
+
 for f in *.html; do
   # clear anything a previous run left behind
   sed -i '/<link rel="canonical"/d; /<meta property="og:url"/d; /<meta property="og:image/d' "$f"

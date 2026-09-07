@@ -2,7 +2,7 @@
 # This is a plain static site. There is no build step.
 
 [build]
-  publish = "."
+  publish = "public"
   command = ""
 
 [[headers]]

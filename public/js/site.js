@@ -113,7 +113,7 @@
       var err = form.querySelector('.form-error') || document.createElement('p');
       err.className = 'form-error form-note';
       err.setAttribute('role', 'alert');
-      err.textContent = "That did not send. Email me directly at jaimiek17@gmail.com and I will get it.";
+      err.textContent = "That did not send. Email me directly at hello@jaimiekozyra.com and I will get it.";
       if (!err.parentNode) form.appendChild(err);
     });
   });

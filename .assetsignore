@@ -1,0 +1,6 @@
+# Repo files that are not part of the website.
+NOTES.md
+README.md
+set-domain.sh
+netlify.toml
+wrangler.toml

@@ -1,0 +1,9 @@
+# Cloudflare config for the static site. There is no build step, no code to
+# run. Wrangler just uploads the files and serves them.
+
+name = "jkwebsite"
+compatibility_date = "2026-09-01"
+
+[assets]
+directory = "."
+not_found_handling = "404-page"

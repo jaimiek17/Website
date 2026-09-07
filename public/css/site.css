@@ -734,6 +734,15 @@ textarea { min-height: 150px; resize: vertical; }
   background: var(--pink-foil);
 }
 
+/* The mark, sitting behind the message box. */
+.card-mark-wrap { position: relative; overflow: hidden; }
+.card-mark {
+  position: absolute; right: -16%; top: -10%; width: 66%;
+  opacity: 0.14; pointer-events: none; user-select: none;
+}
+.card-mark-wrap > *:not(.card-mark) { position: relative; z-index: 1; }
+@media (max-width: 820px) { .card-mark { right: -24%; width: 82%; } }
+
 /* ---------- image placeholders, removed before launch ---------- */
 .ph {
   display: grid; place-content: center; text-align: center; gap: 0.4rem;

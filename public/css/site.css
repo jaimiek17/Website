@@ -704,6 +704,36 @@ textarea { min-height: 150px; resize: vertical; }
 .band-dark .form-note { color: var(--blush-muted); }
 .band-dark label { color: var(--blush); }
 
+/* ---------- contact form, the fuller treatment ---------- */
+.form-head { margin-bottom: 1.5rem; }
+.form-head h3 { margin: 0.35rem 0 0; font-size: clamp(30px, 24.6px + 1.44vw, 42px); }
+.form-head .rule { margin: 1rem 0 1.25rem; width: 120px; }
+.form-lead { font-size: var(--t-small); color: var(--charcoal-muted); margin: 0; }
+
+.field { position: relative; }
+.field > label {
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--charcoal-muted); margin-bottom: 0.5rem;
+}
+.field .field-icon {
+  position: absolute; left: 14px; bottom: 13px; width: 18px; height: 18px;
+  color: var(--charcoal-muted); pointer-events: none;
+}
+.field textarea + .field-icon { bottom: auto; top: 2.35rem; }
+.field input, .field textarea { padding-left: 42px; }
+.field ::placeholder { color: var(--charcoal-muted); opacity: 0.7; }
+
+.btn-block { display: block; width: 100%; text-align: center; }
+
+.form-sign {
+  font-family: var(--display); font-style: italic; font-size: 1.15rem;
+  text-align: center; color: var(--charcoal); margin: 1.75rem 0 0;
+}
+.form-sign::after {
+  content: ""; display: block; width: 90px; height: 2px; margin: 0.6rem auto 0;
+  background: var(--pink-foil);
+}
+
 /* ---------- image placeholders, removed before launch ---------- */
 .ph {
   display: grid; place-content: center; text-align: center; gap: 0.4rem;

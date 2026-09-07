@@ -63,16 +63,30 @@
       </ul>
 </div>
     <div class="card">
-      <h3>Send a message</h3>
+      <div class="form-head">
+        <p class="label">Get in touch</p>
+        <h3>Send a message</h3>
+        <hr class="rule">
+        <p class="form-lead">Have a question about an offer? Send it here. I read every message myself and usually reply within a couple of business days.</p>
+      </div>
       <form class="form" method="post" action="https://api.web3forms.com/submit" data-contact
             style="max-width:none">
         <input type="hidden" name="access_key" value="f8c6be9d-cb64-4dc0-9eff-f482db64594c">
         <input type="hidden" name="subject" value="New message from your website">
         <input type="hidden" name="from_name" value="jaimiekozyra.com">
         <p hidden><label>Leave this empty <input name="botcheck"></label></p>
-        <div><label for="c-name">Your name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
-        <div><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
-        <div><label for="c-topic">What is this about?</label>
+        <div class="field">
+          <label for="c-name">Your name</label>
+          <input id="c-name" name="name" type="text" placeholder="First and last name" autocomplete="name" required>
+          <svg class="field-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"/></svg>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <svg class="field-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.4-8 5-8-5V6l8 5 8-5v2.4z"/></svg>
+        </div>
+        <div class="field">
+          <label for="c-topic">What is this about?</label>
           <select id="c-topic" name="topic">
             <option value="" disabled selected>Choose one</option>
             <option>The Soul Map</option>
@@ -81,9 +95,15 @@
             <option>Pre-Work Intensive</option>
             <option>Podcast or collaboration</option>
             <option>Something else</option>
-          </select></div>
-        <div><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
-        <button class="btn" type="submit">Send it</button>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" name="message" placeholder="Type your message here..." required></textarea>
+          <svg class="field-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+        </div>
+        <button class="btn btn-block" type="submit">Send my message <span class="arw">&rarr;</span></button>
+        <p class="form-sign">Real conversations. Real people. Always.</p>
       </form>
 </div>
   </div>

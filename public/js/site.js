@@ -106,7 +106,7 @@
       var note = document.createElement('p');
       note.className = 'optin-done';
       note.setAttribute('role', 'status');
-      note.textContent = "That is with me. I read everything myself, so give me a couple of business days.";
+      note.textContent = "That is with me. I read everything myself, so you'll hear back within 24 hours.";
       form.parentNode.replaceChild(note, form);
     }).catch(function () {
       if (btn) { btn.disabled = false; btn.textContent = 'Send it'; }

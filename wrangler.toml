@@ -7,6 +7,3 @@ compatibility_date = "2026-09-01"
 [assets]
 directory = "public"
 not_found_handling = "404-page"
-# Serve about.html at about.html. Without this Cloudflare redirects to /about,
-# which does not match the canonical tags or any link on the site.
-html_handling = "none"

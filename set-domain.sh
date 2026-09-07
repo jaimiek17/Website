@@ -24,7 +24,8 @@ for f in *.html; do
   # clear anything a previous run left behind
   sed -i '/<link rel="canonical"/d; /<meta property="og:url"/d; /<meta property="og:image/d' "$f"
 
-  slug=$f
+  # Cloudflare serves these without the .html, so the canonical must match.
+  slug=${f%.html}
   [ "$f" = "index.html" ] && slug=""
 
   # canonical goes above og:type, og:url and og:image below og:description
@@ -46,7 +47,8 @@ done
            "pre-work-intensive.html 0.7" "narrative-loom.html 0.7" \
            "newsletter.html 0.7" "contact.html 0.5" "privacy.html 0.2" "terms.html 0.2"; do
     slug=${p% *}; pri=${p#* }
-    [ "$slug" = "index.html" ] && slug=""
+    slug=${slug%.html}
+    [ "$slug" = "index" ] && slug=""
     echo "  <url><loc>$BASE/$slug</loc><priority>$pri</priority></url>"
   done
   echo '</urlset>'

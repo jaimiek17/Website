@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jaimiekozyra.netlify.app/sitemap.xml
+Sitemap: https://jaimiekozyra.com/sitemap.xml

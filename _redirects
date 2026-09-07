@@ -1,0 +1,2 @@
+# Send www to the bare domain so there is one address, not two.
+https://www.jaimiekozyra.com/* https://jaimiekozyra.com/:splat 301

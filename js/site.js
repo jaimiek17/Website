@@ -81,7 +81,7 @@
   }
 })();
 
-// The contact form posts to Netlify Forms. Submitting in the background keeps
+// The contact form posts to Web3Forms. Submitting in the background keeps
 // her on the page, and the note below replaces the form once it lands.
 (function () {
   var form = document.querySelector('form[data-contact]');
@@ -92,12 +92,17 @@
     var btn = form.querySelector('button[type=submit]');
     if (btn) { btn.disabled = true; btn.textContent = 'Sending'; }
 
-    fetch('/', {
+    var data = {};
+    new FormData(form).forEach(function (v, k) { data[k] = v; });
+
+    fetch(form.action, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
     }).then(function (r) {
-      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).then(function (out) {
+      if (!out || out.success !== true) throw new Error('rejected');
       var note = document.createElement('p');
       note.className = 'optin-done';
       note.setAttribute('role', 'status');

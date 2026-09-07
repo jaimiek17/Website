@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | Jaimie Kozyra</title>
 <meta name="description" content="Questions about the Soul Map, the Pre-Work Intensive or Stripped Back. Ask plainly and get a plain answer.">
-<link rel="canonical" href="https://jaimiekozyra.netlify.app/contact.html">
+<link rel="canonical" href="https://jaimiekozyra.com/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Jaimie Kozyra">
 <meta property="og:title" content="Contact | Jaimie Kozyra">
 <meta property="og:description" content="Questions about the Soul Map, the Pre-Work Intensive or Stripped Back. Ask plainly and get a plain answer.">
-<meta property="og:url" content="https://jaimiekozyra.netlify.app/contact.html">
-<meta property="og:image" content="https://jaimiekozyra.netlify.app/assets/og-card.jpg">
+<meta property="og:url" content="https://jaimiekozyra.com/contact.html">
+<meta property="og:image" content="https://jaimiekozyra.com/assets/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Jaimie Kozyra. You are not lost, you just have not met her yet.">
@@ -64,10 +64,12 @@
 </div>
     <div class="card">
       <h3>Send a message</h3>
-      <form class="form" method="post" action="/" name="contact" data-contact
-            data-netlify="true" data-netlify-honeypot="bot-field" style="max-width:none">
-        <input type="hidden" name="form-name" value="contact">
-        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+      <form class="form" method="post" action="https://api.web3forms.com/submit" data-contact
+            style="max-width:none">
+        <input type="hidden" name="access_key" value="f8c6be9d-cb64-4dc0-9eff-f482db64594c">
+        <input type="hidden" name="subject" value="New message from your website">
+        <input type="hidden" name="from_name" value="jaimiekozyra.com">
+        <p hidden><label>Leave this empty <input name="botcheck"></label></p>
         <div><label for="c-name">Your name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
         <div><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
         <div><label for="c-topic">What is this about?</label>

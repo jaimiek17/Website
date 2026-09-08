@@ -425,6 +425,9 @@ section { padding-block: var(--pad-y); }
   line-height: 1.08; letter-spacing: -0.02em; color: var(--charcoal);
   max-width: 800px; margin: 0 0 0.35em; text-wrap: balance;
 }
+.hero-line-1 em {
+  font-style: italic; color: var(--pink);
+}
 .hero-line-2 {
   width: fit-content; max-width: 100%;
   font-family: var(--display); font-style: italic;
@@ -481,6 +484,20 @@ section { padding-block: var(--pad-y); }
 @media (max-width: 859px) {
   .hero-photo { width: 100vw; max-width: 100vw; margin-inline: calc(50% - 50vw); }
   .hero-photo .portrait-hero { max-width: none; }
+}
+/* Desktop: the photo runs off the right edge and fills the hero. */
+@media (min-width: 860px) {
+  .hero:has(.hero-photo) { min-height: 660px; display: flex; align-items: center; }
+  .hero:has(.hero-photo) .hero-inner.split { grid-template-columns: 1fr; max-width: 1160px; }
+  .hero:has(.hero-photo) .hero-inner > div { max-width: 55%; }
+  .hero-photo {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 45%;
+    margin: 0; z-index: 0;
+  }
+  .hero-photo .portrait-hero {
+    width: 100%; height: 100%; max-width: none; margin: 0;
+    object-fit: cover; object-position: 50% 8%;
+  }
 }
 
 .portrait-round {

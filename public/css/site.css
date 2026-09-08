@@ -616,14 +616,14 @@ blockquote.testimonial p {
 .photo-note {
   position: absolute; left: 6%; top: 5%; right: auto;
   text-align: left; z-index: 2; pointer-events: none;
-  transform: rotate(-9deg); transform-origin: left top;
+  transform: rotate(-14deg); transform-origin: left top;
 }
 .photo-note .hero-line-4 {
-  margin: 0; max-width: 10ch;
-  font-size: clamp(19px, 16.4px + 0.68vw, 25px);
+  margin: 0; max-width: 11ch;
+  font-size: clamp(23px, 19.7px + 0.87vw, 31px);
   line-height: 1.2;
 }
-.photo-note .hero-heart { width: 34px; margin-top: 0.3rem; }
+.photo-note .hero-heart { width: 40px; margin-top: 0.35rem; }
 @media (min-width: 860px) { .photo-note { left: 7%; top: 6%; } }
 
 /* v14 0.2 · the sound familiar list runs tighter */

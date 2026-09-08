@@ -614,9 +614,9 @@ blockquote.testimonial p {
 
 /* The handwritten line, written onto the wall in the photo. */
 .photo-note {
-  position: absolute; left: 3%; bottom: 4%; right: auto;
+  position: absolute; left: 6%; top: 5%; right: auto;
   text-align: left; z-index: 2; pointer-events: none;
-  transform: rotate(-5deg); transform-origin: left bottom;
+  transform: rotate(-9deg); transform-origin: left top;
 }
 .photo-note .hero-line-4 {
   margin: 0; max-width: 10ch;
@@ -624,9 +624,7 @@ blockquote.testimonial p {
   line-height: 1.2;
 }
 .photo-note .hero-heart { width: 34px; margin-top: 0.3rem; }
-/* Desktop crops above her feet, and the bottom left is covered by the
-   letters, so the note stays up on the clean wall there. */
-@media (min-width: 860px) { .photo-note { left: 7%; top: 5%; bottom: auto; right: auto; } }
+@media (min-width: 860px) { .photo-note { left: 7%; top: 6%; } }
 
 /* v14 0.2 · the sound familiar list runs tighter */
 .tight-list li { line-height: 1.6; }

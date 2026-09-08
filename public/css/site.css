@@ -614,7 +614,7 @@ blockquote.testimonial p {
 
 /* The handwritten line, written onto the wall in the photo. */
 .photo-note {
-  position: absolute; left: 6%; top: 5%; right: auto;
+  position: absolute; left: 2%; top: 3%; right: auto;
   text-align: left; z-index: 2; pointer-events: none;
   transform: rotate(-14deg); transform-origin: left top;
 }
@@ -624,7 +624,7 @@ blockquote.testimonial p {
   line-height: 1.2;
 }
 .photo-note .hero-heart { width: 40px; margin-top: 0.35rem; }
-@media (min-width: 860px) { .photo-note { left: 7%; top: 6%; } }
+@media (min-width: 860px) { .photo-note { left: 3%; top: 6%; } }
 
 /* v14 0.2 · the sound familiar list runs tighter */
 .tight-list li { line-height: 1.6; }

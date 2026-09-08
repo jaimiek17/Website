@@ -482,7 +482,7 @@ section { padding-block: var(--pad-y); }
   max-width: 420px; margin-inline: auto;
 }
 @media (max-width: 859px) {
-  .hero-photo { width: 100vw; max-width: 100vw; margin-inline: calc(50% - 50vw); }
+  .hero-photo { position: relative; width: 100vw; max-width: 100vw; margin-inline: calc(50% - 50vw); }
   .hero-photo .portrait-hero { max-width: none; }
 }
 /* Desktop: the photo runs off the right edge and fills the hero. */
@@ -608,10 +608,22 @@ blockquote.testimonial p {
   max-width: 22ch; margin: 0.7em 0 0;
 }
 .hero-heart {
-  /* inline-block so it follows the hero's alignment, centred on a phone */
   display: inline-block; width: 42px; height: auto;
-  margin: 0.45rem 0 1.1rem; color: var(--pink);
+  margin: 0.45rem 0 0; color: var(--pink);
 }
+
+/* The handwritten line, written onto the wall in the photo. */
+.photo-note {
+  position: absolute; left: 6%; top: 5%; right: 6%;
+  text-align: left; z-index: 2; pointer-events: none;
+}
+.photo-note .hero-line-4 {
+  margin: 0; max-width: 12ch;
+  font-size: clamp(19px, 16.4px + 0.68vw, 25px);
+  line-height: 1.2;
+}
+.photo-note .hero-heart { width: 34px; margin-top: 0.3rem; }
+@media (min-width: 860px) { .photo-note { left: 7%; top: 5%; right: auto; } }
 
 /* v14 0.2 · the sound familiar list runs tighter */
 .tight-list li { line-height: 1.6; }

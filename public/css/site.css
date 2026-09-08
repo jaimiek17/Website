@@ -585,9 +585,15 @@ blockquote.testimonial p {
 
 /* v14 0.1 · the fourth hero line sits under the third, quieter */
 .hero-line-4 {
-  font-family: var(--body); font-size: clamp(16px, 15.3px + 0.18vw, 17.5px);
-  line-height: 1.5; color: var(--charcoal-muted);
-  max-width: 46ch; margin: 0.6em 0 0;
+  font-family: "Caveat", var(--display), cursive;
+  font-size: clamp(24px, 19.7px + 1.15vw, 34px);
+  line-height: 1.25; color: var(--charcoal);
+  max-width: 22ch; margin: 0.7em 0 0;
+}
+.hero-heart {
+  /* inline-block so it follows the hero's alignment, centred on a phone */
+  display: inline-block; width: 42px; height: auto;
+  margin: 0.45rem 0 1.1rem; color: var(--pink);
 }
 
 /* v14 0.2 · the sound familiar list runs tighter */

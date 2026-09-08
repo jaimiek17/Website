@@ -35,7 +35,7 @@ for f in *.html; do
 <meta property=\"og:image\" content=\"$BASE/assets/og-card.jpg\">\\
 <meta property=\"og:image:width\" content=\"1200\">\\
 <meta property=\"og:image:height\" content=\"630\">\\
-<meta property=\"og:image:alt\" content=\"Jaimie Kozyra. You are not lost, you just have not met her yet.\">" "$f"
+<meta property=\"og:image:alt\" content=\"Jaimie Kozyra. You are not lost. You are becoming.\">" "$f"
 done
 
 # stripped-back.html is unlinked and noindex, so it stays out of the sitemap

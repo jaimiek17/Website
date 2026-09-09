@@ -594,7 +594,8 @@ blockquote.testimonial p {
 }
 
 /* v11 PART 7 · the alignment band */
-.align-close {
+/* The closing line of a section, on its own. */
+.section-close {
   font-family: var(--display); font-variation-settings: 'opsz' 72, 'wght' 500;
   font-size: 32px; line-height: 1.25; color: var(--charcoal);
   max-width: none; margin: 2rem 0 0;

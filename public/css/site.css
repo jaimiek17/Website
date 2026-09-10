@@ -627,6 +627,9 @@ blockquote.testimonial p {
 .photo-note .hero-heart { width: 40px; margin-top: 0.35rem; }
 @media (min-width: 860px) { .photo-note { left: 3%; top: 6%; } }
 
+/* v19 3 · the lead line of What changes, same size, extra gap under it */
+.changes p.changes-lead { margin-bottom: 40px; }
+
 /* v17 5.2 · the offer cover, small, in the corner of each block */
 .shelf-item { position: relative; }
 .offer-thumb {

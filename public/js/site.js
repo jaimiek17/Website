@@ -118,3 +118,17 @@
     });
   });
 })();
+
+// The subscribe tab scrolls to the form when it is on this page, and holds
+// still for anyone who has asked their system to reduce motion.
+(function () {
+  var tab = document.querySelector('[data-subscribe-tab]');
+  if (!tab) return;
+  tab.addEventListener('click', function (e) {
+    var target = document.getElementById('subscribe');
+    if (!target) return;
+    e.preventDefault();
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  });
+})();

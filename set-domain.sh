@@ -44,7 +44,7 @@ done
   echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
   for p in "index.html 1.0" "soul-map.html 0.9" "work-with-me.html 0.9" \
            "you-left-yourself-out.html 0.9" "about.html 0.8" \
-           "pre-work-intensive.html 0.7" "narrative-loom.html 0.7" \
+           "pre-work-intensive.html 0.7" \
            "newsletter.html 0.7" "contact.html 0.5" "privacy.html 0.2" "terms.html 0.2"; do
     slug=${p% *}; pri=${p#* }
     slug=${slug%.html}

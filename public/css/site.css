@@ -627,18 +627,6 @@ blockquote.testimonial p {
 .photo-note .hero-heart { width: 40px; margin-top: 0.35rem; }
 @media (min-width: 860px) { .photo-note { left: 3%; top: 6%; } }
 
-/* The free deck tab, fixed to the right edge. Desktop only. */
-.deck-tab {
-  position: fixed; right: 0; top: 50%;
-  transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl;
-  z-index: 40; padding: 14px; border-radius: 0 4px 4px 0;
-  background: var(--pink-foil); color: #FFFFFF;
-  font-family: var(--body); font-weight: 600; font-size: 13px;
-  letter-spacing: 0.18em; text-decoration: none;
-}
-.deck-tab:hover, .deck-tab:focus { color: #FFFFFF; }
-@media (max-width: 899px) { .deck-tab { display: none; } }
-
 /* v19 3 · the lead line of What changes, same size, extra gap under it */
 .changes p.changes-lead { margin-bottom: 40px; }
 

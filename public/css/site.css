@@ -459,7 +459,8 @@ section { padding-block: var(--pad-y); }
 .social-icon:hover { background: #FFFFFF; color: var(--charcoal); }
 /* v12 2.2 · .band-dark a out-specified .social-icon, so the glyph went cream on
    a cream circle and read as an empty ring. */
-.band-dark a.social-icon, .band-dark a.social-icon:hover { color: var(--charcoal); }
+.band-dark a.social-icon, .band-dark a.social-icon:hover,
+.site-footer a.social-icon, .site-footer a.social-icon:hover { color: var(--charcoal); }
 
 /* v8 · story pull quote. Fraunces 32px, charcoal, not pink. */
 .pull-quote {
@@ -626,6 +627,21 @@ blockquote.testimonial p {
 }
 .photo-note .hero-heart { width: 40px; margin-top: 0.35rem; }
 @media (min-width: 860px) { .photo-note { left: 3%; top: 6%; } }
+
+/* A quiet invitation, not a banner. Narrow, no band, form on one line. */
+.subscribe-strip { border-block: 1px solid var(--hairline); }
+.subscribe-strip h3 { margin: 0.35rem 0 0.5rem; font-size: clamp(22px, 19.3px + 0.73vw, 28px); }
+.subscribe-strip .muted { margin: 0 0 1.5rem; max-width: var(--measure); }
+.subscribe-form { display: grid; gap: 1rem; max-width: 560px; }
+@media (min-width: 700px) {
+  .subscribe-form { grid-template-columns: 1fr 1fr auto; align-items: end; max-width: none; }
+  .subscribe-form .btn { white-space: nowrap; }
+}
+.subscribe-strip .form-note { margin: 1rem 0 0; }
+.subscribe-strip .form-note + .form-note { margin-top: 0.35rem; }
+
+/* The icon row, now living in the footer. */
+.site-footer .socials-row { margin-top: 1.25rem; }
 
 /* A way to subscribe from anywhere. Fixed to the right edge, desktop only. */
 .subscribe-tab {

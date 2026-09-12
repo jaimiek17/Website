@@ -3,6 +3,8 @@
 // Jaimie's copy, verbatim from her brief. Do not rephrase, shorten or polish
 // anything in here. No em dashes anywhere.
 
+import { shell, button, signature, p as para, esc, PINK, INK, QUIET, HAIRLINE } from './mail.js';
+
 var WORKBOOK = 'https://jaimiekozyra.com/you-left-yourself-out';
 var DECK     = 'https://jaimiekozyra.com/narrative-loom#get';
 
@@ -66,83 +68,53 @@ var BANDS = {
   }
 };
 
-function esc(s) {
-  return String(s)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-// Her eight answers, one per line, as a quoted block.
+// Her eight answers, one per line, as a quoted block in her pink.
 function playback(answers) {
   var rows = answers.map(function (a) {
-    return '<tr><td style="padding:0 0 10px;font:15px/1.5 Georgia,serif;color:#323232">' +
-           '<span style="color:#8a8a8a">' + esc(a.label) + '</span><br>' +
+    return '<tr><td style="padding:0 0 12px;font:15px/1.5 Georgia,serif;color:' + INK + '">' +
+           '<span style="font:600 11px/1.4 Helvetica,Arial,sans-serif;letter-spacing:.12em;' +
+           'text-transform:uppercase;color:' + PINK + '">' + esc(a.label) + '</span><br>' +
            esc(a.text) + '</td></tr>';
   }).join('');
   return '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-         'style="width:100%;margin:0 0 28px;border-left:2px solid #E3D5D1"><tr>' +
-         '<td style="padding:4px 0 4px 18px"><table role="presentation" cellpadding="0" ' +
-         'cellspacing="0" border="0" style="width:100%">' + rows + '</table></td></tr></table>';
-}
-
-function button(label, href) {
-  return '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-         'style="margin:8px 0 28px"><tr><td style="background:#323232;border-radius:2px">' +
-         '<a href="' + href + '" style="display:inline-block;padding:13px 24px;' +
-         'font:600 14px/1 Helvetica,Arial,sans-serif;letter-spacing:.06em;' +
-         'color:#FAF6F4;text-decoration:none">' + esc(label) + '</a></td></tr></table>';
+         'style="width:100%;margin:0 0 28px"><tr>' +
+         '<td width="2" bgcolor="' + PINK + '" style="width:2px;background:' + PINK + '">&nbsp;</td>' +
+         '<td style="padding:2px 0 2px 18px"><table role="presentation" cellpadding="0" ' +
+         'cellspacing="0" border="0" style="width:100%">' + rows + '</table></td>' +
+         '</tr></table>';
 }
 
 function render(tag, firstName, answers) {
   var band = BANDS[tag];
   if (!band) return null;
 
-  var parts = ['<p style="margin:0 0 20px;font:17px/1.6 Georgia,serif;color:#323232">Hi ' +
-               esc(firstName || 'there') + ',</p>',
-               '<p style="margin:0 0 20px;font:17px/1.6 Georgia,serif;color:#323232">' +
-               'Here’s what your answers say.</p>',
-               playback(answers)];
+  var parts = [
+    para('Hi ' + esc(firstName || 'there') + ','),
+    para('Here\u2019s what your answers say.'),
+    playback(answers)
+  ];
 
   band.body.forEach(function (item) {
     if (item.btn) { parts.push(button(item.btn[0], item.btn[1])); return; }
-    if (item.sig) {
-      parts.push('<p style="margin:28px 0 20px;font:italic 19px/1.4 Georgia,serif;' +
-                 'color:#323232">Jaimie</p>');
-      return;
-    }
-    parts.push('<p style="margin:0 0 20px;font:17px/1.6 Georgia,serif;color:#323232">' +
-               item.p + '</p>');
+    if (item.sig) { parts.push(signature()); return; }
+    parts.push(para(item.p));
   });
 
-  var html =
-    '<!doctype html><html><head><meta charset="utf-8">' +
-    '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<title>' + esc(band.subject) + '</title></head>' +
-    '<body style="margin:0;padding:0;background:#FAF6F4">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="width:100%;background:#FAF6F4"><tr><td align="center" style="padding:32px 16px">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="width:100%;max-width:560px;text-align:left">' +
-    '<tr><td style="padding:0 0 24px">' +
-    '<p style="margin:0 0 6px;font:600 12px/1 Helvetica,Arial,sans-serif;' +
-    'letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a">Where you are</p>' +
-    '<h1 style="margin:0;font:italic 30px/1.25 Georgia,serif;color:#323232">' +
-    band.head + '</h1></td></tr>' +
-    '<tr><td>' + parts.join('') + '</td></tr>' +
-    '<tr><td style="padding:28px 0 0;border-top:1px solid #E3D5D1">' +
-    '<p style="margin:0;font:13px/1.6 Helvetica,Arial,sans-serif;color:#8a8a8a">' +
-    'Jaimie Kozyra &middot; <a href="https://jaimiekozyra.com" style="color:#8a8a8a">' +
-    'jaimiekozyra.com</a><br>' +
-    'You got this because you answered the eight questions on my website.</p>' +
-    '</td></tr></table></td></tr></table></body></html>';
+  var html = shell({
+    label: 'Where you are',
+    head: band.head,
+    body: parts.join(''),
+    footnote: 'You got this because you answered the eight questions on my website. ' +
+              'Unsubscribe any time.'
+  });
 
-  var text = 'Hi ' + (firstName || 'there') + ',\n\nHere’s what your answers say.\n\n' +
+  var text = 'Hi ' + (firstName || 'there') + ',\n\nHere\u2019s what your answers say.\n\n' +
     answers.map(function (a) { return a.label + '\n' + a.text; }).join('\n\n') +
     '\n\n' + band.body.map(function (item) {
       if (item.btn) return item.btn[0] + ': ' + item.btn[1];
       if (item.sig) return 'Jaimie';
       return item.p.replace(/<[^>]+>/g, '');
-    }).join('\n\n') + '\n';
+    }).join('\n\n') + '\n\nUnsubscribe any time.\n';
 
   return { subject: band.subject, html: html, text: text };
 }

@@ -9,17 +9,13 @@
 // The copy in the confirmation email is mine, not Jaimie's. There was no
 // brief for it. No em dashes.
 
+import { shell, button, signature, p as para, esc } from './mail.js';
+
 var BASE   = 'https://jaimiekozyra.com';
 var DECK   = BASE + '/narrative-loom/deck';
 var APP    = BASE + '/narrative-loom/app/';
 var GUIDE  = BASE + '/downloads/the-narrative-loom-companion-guide.pdf';
 var DAYS   = 7;
-
-function esc(s) {
-  return String(s)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
 
 function b64url(bytes) {
   var s = btoa(String.fromCharCode.apply(null, new Uint8Array(bytes)));
@@ -78,47 +74,26 @@ async function readToken(secret, token) {
 }
 
 function confirmEmail(firstName, link) {
-  var p = function (t) {
-    return '<p style="margin:0 0 20px;font:17px/1.6 Georgia,serif;color:#323232">' + t + '</p>';
-  };
   var body =
-    p('Hi ' + esc(firstName || 'there') + ',') +
-    p('One click and the deck is yours. 44 cards and the 28 page guide.') +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="margin:0 0 24px"><tr><td style="background:#323232;border-radius:2px">' +
-    '<a href="' + link + '" style="display:inline-block;padding:14px 26px;' +
-    'font:600 14px/1 Helvetica,Arial,sans-serif;letter-spacing:.06em;' +
-    'color:#FAF6F4;text-decoration:none">Confirm and get the deck</a></td></tr></table>' +
-    p('I write twice a month after that. Unsubscribe any time.') +
-    p('<span style="color:#8a8a8a;font-size:15px">If you did not ask for this, ignore ' +
-      'this email. Nothing happens until you click, and the link stops working in a week.</span>');
+    para('Hi ' + esc(firstName || 'there') + ',') +
+    para('One click and the deck is yours. 44 cards and the 28 page guide.') +
+    button('Confirm and get the deck', link) +
+    para('<span style="font-size:15px;color:#6f6360">I write twice a month after that.</span>');
 
-  var html =
-    '<!doctype html><html><head><meta charset="utf-8">' +
-    '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<title>Confirm your email</title></head>' +
-    '<body style="margin:0;padding:0;background:#FAF6F4">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="width:100%;background:#FAF6F4"><tr><td align="center" style="padding:32px 16px">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="width:100%;max-width:560px;text-align:left">' +
-    '<tr><td style="padding:0 0 24px">' +
-    '<p style="margin:0 0 6px;font:600 12px/1 Helvetica,Arial,sans-serif;' +
-    'letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a">One more step</p>' +
-    '<h1 style="margin:0;font:italic 30px/1.25 Georgia,serif;color:#323232">' +
-    'Confirm your email</h1></td></tr>' +
-    '<tr><td>' + body + '</td></tr>' +
-    '<tr><td style="padding:28px 0 0;border-top:1px solid #E3D5D1">' +
-    '<p style="margin:0;font:13px/1.6 Helvetica,Arial,sans-serif;color:#8a8a8a">' +
-    'Jaimie Kozyra &middot; <a href="' + BASE + '" style="color:#8a8a8a">jaimiekozyra.com</a>' +
-    '</p></td></tr></table></td></tr></table></body></html>';
+  var html = shell({
+    label: 'One more step',
+    head: 'Confirm your email',
+    body: body,
+    footnote: 'You asked for the deck on my website. If that was not you, ignore this ' +
+              'and nothing happens. The link stops working in a week. Unsubscribe any time.'
+  });
 
   var text = 'Hi ' + (firstName || 'there') + ',\n\n' +
     'One click and the deck is yours. 44 cards and the 28 page guide.\n\n' +
     'Confirm here: ' + link + '\n\n' +
-    'I write twice a month after that. Unsubscribe any time.\n\n' +
-    'If you did not ask for this, ignore this email. Nothing happens until you ' +
-    'click, and the link stops working in a week.\n';
+    'I write twice a month after that.\n\n' +
+    'You asked for the deck on my website. If that was not you, ignore this and ' +
+    'nothing happens. The link stops working in a week. Unsubscribe any time.\n';
 
   return { subject: 'Confirm your email and the deck is yours', html: html, text: text };
 }
@@ -144,50 +119,26 @@ function notice(head, line) {
 // She lands on the download page the moment she confirms, but if she closes
 // that tab she has no way back to it. So the same two links go to her inbox.
 function deckEmail(firstName) {
-  var p = function (t) {
-    return '<p style="margin:0 0 20px;font:17px/1.6 Georgia,serif;color:#323232">' + t + '</p>';
-  };
-  var btn = function (label, href) {
-    return '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-           'style="margin:0 0 12px"><tr><td style="background:#323232;border-radius:2px">' +
-           '<a href="' + href + '" style="display:inline-block;padding:13px 24px;' +
-           'font:600 14px/1 Helvetica,Arial,sans-serif;letter-spacing:.06em;' +
-           'color:#FAF6F4;text-decoration:none">' + esc(label) + '</a></td></tr></table>';
-  };
-
   var body =
-    p('Hi ' + esc(firstName || 'there') + ',') +
-    p('You are in. Here it is, yours to keep.') +
-    btn('Open the deck', APP) +
-    btn('Download the guide', GUIDE) +
-    p('Keep this email. It is the way back to both of them.') +
-    p('On an iPhone, open the deck and tap share, then Add to Home Screen. ' +
-      'It then works like an app, with no signal needed.') +
-    p('If you have not used a deck like this before, the guide opens with three ' +
-      'ways to pull. Start with the single card. One question is plenty.') +
-    '<p style="margin:28px 0 20px;font:italic 19px/1.4 Georgia,serif;color:#323232">Jaimie</p>' +
-    p('I write twice a month. Hit reply any time, I read every one.');
+    para('Hi ' + esc(firstName || 'there') + ',') +
+    para('You are in. Here it is, yours to keep.') +
+    button('Open the deck', APP) +
+    button('Download the guide', GUIDE) +
+    para('Keep this email. It is the way back to both of them.') +
+    para('On an iPhone, open the deck and tap share, then Add to Home Screen. ' +
+         'It then works like an app, with no signal needed.') +
+    para('If you have not used a deck like this before, the guide opens with three ' +
+         'ways to pull. Start with the single card. One question is plenty.') +
+    signature() +
+    para('<span style="font-size:15px;color:#6f6360">I write twice a month. ' +
+         'Hit reply any time, I read every one.</span>');
 
-  var html =
-    '<!doctype html><html><head><meta charset="utf-8">' +
-    '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<title>The Narrative Loom</title></head>' +
-    '<body style="margin:0;padding:0;background:#FAF6F4">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="width:100%;background:#FAF6F4"><tr><td align="center" style="padding:32px 16px">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" ' +
-    'style="width:100%;max-width:560px;text-align:left">' +
-    '<tr><td style="padding:0 0 24px">' +
-    '<p style="margin:0 0 6px;font:600 12px/1 Helvetica,Arial,sans-serif;' +
-    'letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a">Start here</p>' +
-    '<h1 style="margin:0;font:italic 30px/1.25 Georgia,serif;color:#323232">' +
-    'The Narrative Loom</h1></td></tr>' +
-    '<tr><td>' + body + '</td></tr>' +
-    '<tr><td style="padding:28px 0 0;border-top:1px solid #E3D5D1">' +
-    '<p style="margin:0;font:13px/1.6 Helvetica,Arial,sans-serif;color:#8a8a8a">' +
-    'Jaimie Kozyra &middot; <a href="' + BASE + '" style="color:#8a8a8a">jaimiekozyra.com</a><br>' +
-    'You got this because you asked for the deck on my website.</p>' +
-    '</td></tr></table></td></tr></table></body></html>';
+  var html = shell({
+    label: 'Start here',
+    head: 'The Narrative Loom',
+    body: body,
+    footnote: 'You got this because you asked for the deck on my website. Unsubscribe any time.'
+  });
 
   var text = 'Hi ' + (firstName || 'there') + ',\n\n' +
     'You are in. Here it is, yours to keep.\n\n' +
@@ -198,7 +149,8 @@ function deckEmail(firstName) {
     'works like an app, with no signal needed.\n\n' +
     'If you have not used a deck like this before, the guide opens with three ways ' +
     'to pull. Start with the single card. One question is plenty.\n\nJaimie\n\n' +
-    'I write twice a month. Hit reply any time, I read every one.\n';
+    'I write twice a month. Hit reply any time, I read every one.\n\n' +
+    'Unsubscribe any time.\n';
 
   return { subject: 'The Narrative Loom, yours to keep', html: html, text: text };
 }

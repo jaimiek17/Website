@@ -627,6 +627,42 @@ blockquote.testimonial p {
 .photo-note .hero-heart { width: 40px; margin-top: 0.35rem; }
 @media (min-width: 860px) { .photo-note { left: 3%; top: 6%; } }
 
+/* The second way in, sitting between two sections. */
+.wya-entry { text-align: center; margin: 48px 0; }
+.wya-entry-note { font-size: 17px; color: var(--charcoal-muted); margin: 1rem 0 0; }
+
+/* Where are you. One question per screen, three options of equal weight. */
+.wya-progress {
+  font-family: var(--body); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--charcoal-muted); margin: 0 0 1rem;
+}
+.wya-q { margin: 0 0 2rem; }
+.wya-options { display: grid; gap: 0.85rem; }
+.wya-option {
+  display: block; width: 100%; text-align: left; cursor: pointer;
+  font: inherit; font-size: 17px; line-height: 1.45; color: var(--charcoal);
+  background: var(--paper); border: 1px solid var(--charcoal);
+  border-radius: 2px; padding: 1rem 1.15rem;
+}
+.wya-option:hover, .wya-option:focus-visible {
+  background: #FFFFFF; border-color: var(--rust); outline: none;
+}
+.wya-back, .wya-link {
+  font: inherit; font-size: var(--t-small); color: var(--charcoal-muted);
+  background: none; border: 0; padding: 0; margin-top: 2rem; cursor: pointer;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.wya-back:hover, .wya-link:hover { color: var(--charcoal); }
+.wya-consent { margin: 0.5rem 0 0; }
+.wya-consent label {
+  display: flex; gap: 0.6rem; align-items: flex-start;
+  font-size: var(--t-small); font-weight: 400; color: var(--charcoal-muted);
+}
+.wya-consent input { width: auto; min-height: 0; margin-top: 0.2rem; flex: none; }
+.wya-outcome-head { margin: 0 0 0.5rem; }
+.wya-again { margin-top: 2.5rem; font-size: var(--t-small); }
+
 /* A quiet invitation, not a banner. Narrow, no band, form on one line. */
 .subscribe-strip { border-block: 1px solid var(--hairline); }
 .subscribe-strip h3 { margin: 0.35rem 0 0.5rem; font-size: clamp(22px, 19.3px + 0.73vw, 28px); }

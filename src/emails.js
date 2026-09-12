@@ -4,7 +4,7 @@
 // anything in here. No em dashes anywhere.
 
 var WORKBOOK = 'https://jaimiekozyra.com/you-left-yourself-out';
-var DECK     = 'https://jaimiekozyra.com/narrative-loom';
+var DECK     = 'https://jaimiekozyra.com/narrative-loom#get';
 
 var BANDS = {
   adjusting: {

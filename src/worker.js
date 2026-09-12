@@ -184,7 +184,7 @@ async function listIds(env) {
   return null;
 }
 
-async function handleConfirm(request, env) {
+async function handleConfirm(request, env, ctx) {
   if (!env.BREVO_API_KEY) {
     return sub.notice('Something is not set up yet', 'This is on my side, not yours. Try again shortly.');
   }
@@ -228,11 +228,23 @@ async function handleConfirm(request, env) {
     }
   }
 
+  // She is already on her way to the page. The same links go to her inbox so
+  // she can find them again after she closes the tab.
+  var deck = sendMail(env, read.email, read.firstName, sub.deckEmail(read.firstName), ['deck'])
+    .then(function (r) {
+      if (!r.ok) return r.text().then(function (d) {
+        console.log('deck send failed', r.status, d.slice(0, 400));
+      });
+    })
+    .catch(function (err) { console.log('deck send threw', String(err).slice(0, 200)); });
+
+  if (ctx && ctx.waitUntil) ctx.waitUntil(deck); else await deck;
+
   return Response.redirect(sub.DECK, 302);
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     var url = new URL(request.url);
     if (url.pathname === '/api/where-you-are') {
       return handleAnswers(request, env);
@@ -241,7 +253,7 @@ export default {
       return handleSubscribe(request, env);
     }
     if (url.pathname === '/api/confirm') {
-      return handleConfirm(request, env);
+      return handleConfirm(request, env, ctx);
     }
     return env.ASSETS.fetch(request);
   }

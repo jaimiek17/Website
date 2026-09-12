@@ -9,7 +9,6 @@
 
 import { LABELS, OPTIONS } from './questions.js';
 import { render } from './emails.js';
-import * as deck from './deck.js';
 
 var SENDER  = { name: 'Jaimie Kozyra', email: 'hello@jaimiekozyra.com' };
 var ORIGINS = ['https://jaimiekozyra.com', 'https://www.jaimiekozyra.com'];
@@ -115,71 +114,11 @@ async function handleAnswers(request, env) {
   return json({ ok: true, tag: tag, total: total });
 }
 
-// Subscribing asks for the free deck. The contact itself still goes in
-// through the Brevo form the page posts to, same as before, so all this does
-// is send her the files.
-async function handleSubscribe(request, env) {
-  if (request.method !== 'POST') {
-    return json({ ok: false, error: 'method' }, 405);
-  }
-
-  var origin = request.headers.get('origin');
-  if (origin && ORIGINS.indexOf(origin) === -1) {
-    return json({ ok: false, error: 'origin' }, 403);
-  }
-
-  var data;
-  try {
-    data = await request.json();
-  } catch (err) {
-    return json({ ok: false, error: 'body' }, 400);
-  }
-
-  if (data.trap) return json({ ok: true });
-  if (!validEmail(data.email)) return json({ ok: false, error: 'email' }, 400);
-
-  // No cards file yet, so there is nothing honest to send. She is still on
-  // the list either way, because the page posted to Brevo directly.
-  if (!deck.ready()) return json({ ok: true, sent: false, reason: 'no-deck-file' });
-
-  if (!env.BREVO_API_KEY) return json({ ok: false, error: 'unconfigured' }, 503);
-
-  var mail = deck.render(cleanName(data.firstName));
-  var sent = await fetch('https://api.brevo.com/v3/smtp/email', {
-    method: 'POST',
-    headers: {
-      'api-key': env.BREVO_API_KEY,
-      'content-type': 'application/json',
-      accept: 'application/json'
-    },
-    body: JSON.stringify({
-      sender: SENDER,
-      replyTo: SENDER,
-      to: [{ email: data.email, name: cleanName(data.firstName) || undefined }],
-      subject: mail.subject,
-      htmlContent: mail.html,
-      textContent: mail.text,
-      tags: ['narrative-loom']
-    })
-  });
-
-  if (!sent.ok) {
-    var detail = await sent.text();
-    console.log('brevo deck send failed', sent.status, detail.slice(0, 400));
-    return json({ ok: false, error: 'send' }, 502);
-  }
-
-  return json({ ok: true, sent: true });
-}
-
 export default {
   async fetch(request, env) {
     var url = new URL(request.url);
     if (url.pathname === '/api/where-you-are') {
       return handleAnswers(request, env);
-    }
-    if (url.pathname === '/api/subscribe') {
-      return handleSubscribe(request, env);
     }
     return env.ASSETS.fetch(request);
   }

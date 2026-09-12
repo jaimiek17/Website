@@ -65,7 +65,6 @@
         sent = true;
         var btn = form.querySelector('button[type=submit]');
         if (btn) { btn.disabled = true; btn.textContent = 'Sending'; }
-        if (form.hasAttribute('data-deck')) askForDeck(form);
       });
 
       frame.addEventListener('load', function () {
@@ -79,25 +78,6 @@
         form.parentNode.replaceChild(note, form);
       });
     })(forms[i]);
-  }
-
-  // The forms that promise the free deck ask the worker to send it. The form
-  // itself still posts to Brevo, so the list is unaffected either way.
-  function askForDeck(form) {
-    if (!window.fetch) return;
-    var field = function (name) {
-      var el = form.querySelector('[name="' + name + '"]');
-      return el ? el.value : '';
-    };
-    fetch('/api/subscribe', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        email: field('EMAIL').trim(),
-        firstName: field('FIRSTNAME').trim(),
-        trap: field('email_address_check')
-      })
-    }).catch(function () { /* the Brevo post is what matters, this is extra */ });
   }
 })();
 

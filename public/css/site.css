@@ -921,3 +921,15 @@ textarea { min-height: 150px; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* The deck download page. One row per file, stacked on a phone. */
+.download-list { margin: 2.5rem 0; border-top: 1px solid var(--hairline); }
+.download-item {
+  display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center;
+  justify-content: space-between; padding: 1.75rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.download-item h2 { margin: 0 0 0.35rem; font-size: 22px; }
+.download-item p { margin: 0; max-width: 42ch; }
+.download-item .btn { flex: none; }
+@media (max-width: 560px) { .download-item .btn { width: 100%; text-align: center; } }

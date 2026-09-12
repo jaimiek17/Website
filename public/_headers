@@ -17,14 +17,33 @@
 /js/*
   Cache-Control: public, max-age=3600, must-revalidate
 
-# The oracle deck web app. Her own file, served as it is. The cards never
-# change once published, so they cache for a year. The app shell and the
-# service worker must not, or an update would never reach a phone that has
-# already installed it.
-/narrative-loom/app/cards/*
-  Cache-Control: public, max-age=31536000, immutable
+# The oracle deck web app. Her own files, served as they are, and a
+# deliverable rather than a landing page, so nothing here is indexed.
+#
+# The shell files are listed one by one on purpose. A /narrative-loom/app/*
+# wildcard also matches the cards, and Cloudflare applies every rule that
+# matches and joins the results, which produced a Cache-Control reading
+# max-age=0 and max-age=31536000 at the same time.
+/narrative-loom/app/*
   X-Robots-Tag: noindex
 
-/narrative-loom/app/*
+# The cards never change once published.
+/narrative-loom/app/cards/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# These must not stick, or an update would never reach a phone that has
+# already added the app to its home screen.
+/narrative-loom/app/
   Cache-Control: public, max-age=0, must-revalidate
-  X-Robots-Tag: noindex
+
+/narrative-loom/app/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/narrative-loom/app/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/narrative-loom/app/manifest.webmanifest
+  Cache-Control: public, max-age=0, must-revalidate
+
+/narrative-loom/app/icon-180.png
+  Cache-Control: public, max-age=0, must-revalidate

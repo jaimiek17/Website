@@ -38,6 +38,10 @@ checked = 0
 for page in pages:
     src = open(page).read()
     src = re.sub(r'<!--.*?-->', '', src, flags=re.S)   # skip the GA4 placeholder
+    # Skip script and style bodies. The oracle deck app builds image paths by
+    # string concatenation, and those are not links.
+    src = re.sub(r'<script\b[^>]*>.*?</script>', '', src, flags=re.S | re.I)
+    src = re.sub(r'<style\b[^>]*>.*?</style>', '', src, flags=re.S | re.I)
     for href in re.findall(r'(?:href|src)="([^"]+)"', src):
         got = resolve(page, href.split('?')[0])
         if got is None:

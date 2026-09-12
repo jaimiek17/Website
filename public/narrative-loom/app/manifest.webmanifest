@@ -1,0 +1,15 @@
+{
+  "name": "The Narrative Loom",
+  "short_name": "Narrative Loom",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#06152d",
+  "theme_color": "#06152d",
+  "icons": [
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

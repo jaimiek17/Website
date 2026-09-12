@@ -125,7 +125,7 @@ function deckEmail(firstName) {
     button('Open the deck', APP) +
     button('Download the guide', GUIDE) +
     para('Keep this email. It is the way back to both of them.') +
-    para('On an iPhone, open the deck and tap share, then Add to Home Screen. ' +
+    para('On your phone, open the deck and tap share, then Add to Home Screen. ' +
          'It then works like an app, with no signal needed.') +
     para('If you have not used a deck like this before, the guide opens with three ' +
          'ways to pull. Start with the single card. One question is plenty.') +
@@ -145,7 +145,7 @@ function deckEmail(firstName) {
     'Open the deck: ' + APP + '\n' +
     'Download the guide: ' + GUIDE + '\n\n' +
     'Keep this email. It is the way back to both of them.\n\n' +
-    'On an iPhone, open the deck and tap share, then Add to Home Screen. It then ' +
+    'On your phone, open the deck and tap share, then Add to Home Screen. It then ' +
     'works like an app, with no signal needed.\n\n' +
     'If you have not used a deck like this before, the guide opens with three ways ' +
     'to pull. Start with the single card. One question is plenty.\n\nJaimie\n\n' +

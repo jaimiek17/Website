@@ -47,35 +47,59 @@
   var forms = document.querySelectorAll('form[data-optin]');
   if (!forms.length) return;
 
-  var frame = document.createElement('iframe');
-  frame.name = 'optin-sink';
-  frame.setAttribute('aria-hidden', 'true');
-  frame.setAttribute('tabindex', '-1');
-  frame.style.cssText = 'position:absolute;width:0;height:0;border:0;left:-9999px';
-  document.body.appendChild(frame);
-
   for (var i = 0; i < forms.length; i++) {
     (function (form) {
-      form.target = 'optin-sink';
-      var sent = false;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-      form.addEventListener('submit', function () {
-        var email = form.querySelector('input[type=email]');
-        if (email && !email.value) return;
-        sent = true;
+        var field = function (name) {
+          var el = form.querySelector('[name="' + name + '"]');
+          return el ? el.value.trim() : '';
+        };
+        if (!field('EMAIL')) return;
+
         var btn = form.querySelector('button[type=submit]');
         if (btn) { btn.disabled = true; btn.textContent = 'Sending'; }
-      });
 
-      frame.addEventListener('load', function () {
-        if (!sent) return;
-        sent = false;
-        var note = document.createElement('p');
-        note.className = 'optin-done';
-        note.setAttribute('role', 'status');
-        note.textContent = form.getAttribute('data-done') ||
-          "Almost done. Click the link in the email I just sent and you're in. Check spam if you don't see it.";
-        form.parentNode.replaceChild(note, form);
+        var done = function (text) {
+          var note = document.createElement('p');
+          note.className = 'optin-done';
+          note.setAttribute('role', 'status');
+          note.textContent = text;
+          form.parentNode.replaceChild(note, form);
+        };
+
+        var failed = function () {
+          if (btn) { btn.disabled = false; btn.textContent = 'Try again'; }
+          var warn = form.querySelector('.optin-error');
+          if (!warn) {
+            warn = document.createElement('p');
+            warn.className = 'optin-error';
+            warn.setAttribute('role', 'status');
+            form.appendChild(warn);
+          }
+          warn.textContent = 'That did not go through. Try once more, or email ' +
+                             'hello@jaimiekozyra.com and I will add you myself.';
+        };
+
+        fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            email: field('EMAIL'),
+            firstName: field('FIRSTNAME'),
+            trap: field('email_address_check')
+          })
+        }).then(function (res) {
+          return res.json().catch(function () { return {}; });
+        }).then(function (out) {
+          if (out && out.ok) {
+            done(form.getAttribute('data-done') ||
+              "Almost done. Click the link in the email I just sent and you're in. Check spam if you don't see it.");
+          } else {
+            failed();
+          }
+        }).catch(failed);
       });
     })(forms[i]);
   }

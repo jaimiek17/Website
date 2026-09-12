@@ -933,3 +933,7 @@ textarea { min-height: 150px; resize: vertical; }
 .download-item p { margin: 0; max-width: 42ch; }
 .download-item .btn { flex: none; }
 @media (max-width: 560px) { .download-item .btn { width: 100%; text-align: center; } }
+
+/* The signup runs through the site now, so a failure has to say so. */
+.optin-error { margin: 1rem 0 0; font-size: 16px; color: var(--charcoal); }
+.band-dark .optin-error { color: var(--blush); }

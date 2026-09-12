@@ -90,8 +90,30 @@
       var line = root.querySelector('[data-outcome-line]');
       if (head) head.textContent = b.head;
       if (line) line.textContent = b.line;
+      sendAnswers();
       setTimeout(function () { show(10); }, 150);
     });
+  }
+
+  // The post above puts her on Jaimie's list. This one asks the worker to send
+  // her the outcome email. Only the eight option numbers go over, never the
+  // wording, so the worker can rebuild her answers from its own copy.
+  function sendAnswers() {
+    var value = function (name) {
+      var field = form.querySelector('[name="' + name + '"]');
+      return field ? field.value : '';
+    };
+    if (!window.fetch) return;
+    fetch('/api/where-you-are', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        email: value('EMAIL').trim(),
+        firstName: value('FIRSTNAME').trim(),
+        picks: answers.map(function (a) { return a.value; }),
+        trap: value('email_address_check')
+      })
+    }).catch(function () { /* she has the state on screen either way */ });
   }
 
   show(0);

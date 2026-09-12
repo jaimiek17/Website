@@ -1,9 +1,15 @@
-# Cloudflare config for the static site. There is no build step, no code to
-# run. Wrangler just uploads the files and serves them.
+# Cloudflare config. The site is static files in public/, uploaded as they
+# are with no build step. The worker in src/ handles one path, the outcome
+# email for /where-you-are, and passes everything else to the static files.
+#
+# Needs one secret set in the dashboard (Settings, Variables and Secrets):
+#   BREVO_API_KEY   a Brevo API key, stored as a Secret, never in this repo
 
 name = "jkwebsite"
+main = "src/worker.js"
 compatibility_date = "2026-09-01"
 
 [assets]
 directory = "public"
 not_found_handling = "404-page"
+binding = "ASSETS"

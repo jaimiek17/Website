@@ -638,6 +638,14 @@ blockquote.testimonial p {
   color: var(--charcoal-muted); margin: 0 0 1rem;
 }
 .wya-q { margin: 0 0 2rem; }
+.wya-setup {
+  border-left: 2px solid var(--hairline); padding-left: 1.1rem;
+  color: var(--charcoal-muted); margin-top: 1.75rem;
+}
+.wya-q + .wya-note {
+  margin: -1.5rem 0 2rem; font-size: 16px; line-height: 1.5;
+  color: var(--charcoal-muted);
+}
 .wya-options { display: grid; gap: 0.85rem; }
 .wya-option {
   display: block; width: 100%; text-align: left; cursor: pointer;

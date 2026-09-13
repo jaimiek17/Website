@@ -937,3 +937,9 @@ textarea { min-height: 150px; resize: vertical; }
 /* The signup runs through the site now, so a failure has to say so. */
 .optin-error { margin: 1rem 0 0; font-size: 16px; color: var(--charcoal); }
 .band-dark .optin-error { color: var(--blush); }
+
+/* The Transition Intensive Session page runs to eight sections, and the
+   standard rhythm left it too airy. Scoped to that page, not site wide. */
+.tight section { padding-block: calc(var(--pad-y) * 0.58); }
+.tight .hero { padding-block: calc(var(--pad-y) * 0.55) calc(var(--pad-y) * 0.5); }
+.label-fine { font-size: 11px; letter-spacing: 0.14em; }

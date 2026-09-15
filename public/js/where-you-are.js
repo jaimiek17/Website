@@ -75,45 +75,122 @@
   });
   observer.observe(root, { attributes: true, attributeFilter: ['hidden'], subtree: true });
 
-  if (form) {
-    // Brevo answers with raw JSON, so the post goes through a hidden frame and
-    // she stays on the page. The state is shown either way.
-    var sink = document.createElement('iframe');
-    sink.name = 'wya-sink';
-    sink.hidden = true;
-    document.body.appendChild(sink);
-    form.target = 'wya-sink';
+  // Common domain slips. The one real bounce so far was a typo in the name
+  // part, not the domain, so this is a safety net. The read back below is the
+  // fix that would actually have caught it.
+  var DOMAINS = {
+    'gmial.com': 'gmail.com', 'gmai.com': 'gmail.com', 'gmail.co': 'gmail.com',
+    'gmail.con': 'gmail.com', 'gnail.com': 'gmail.com', 'gamil.com': 'gmail.com',
+    'hotmial.com': 'hotmail.com', 'hotmai.com': 'hotmail.com', 'hotmail.co': 'hotmail.com',
+    'yahooo.com': 'yahoo.com', 'yaho.com': 'yahoo.com', 'yahoo.co': 'yahoo.com',
+    'outlok.com': 'outlook.com', 'outloo.com': 'outlook.com',
+    'icloud.co': 'icloud.com', 'iclod.com': 'icloud.com'
+  };
 
-    form.addEventListener('submit', function () {
+  function suggest(value) {
+    var at = value.lastIndexOf('@');
+    if (at < 1) return null;
+    var fixed = DOMAINS[value.slice(at + 1).toLowerCase()];
+    return fixed ? value.slice(0, at + 1) + fixed : null;
+  }
+
+  if (form) {
+    var emailField = form.querySelector('[name="EMAIL"]');
+    var check = root.querySelector('[data-email-check]');
+
+    // Rebuilt only when the text actually changes. Blur fires as she reaches
+    // for the suggestion, and rebuilding then would pull the button out from
+    // under her finger.
+    var shown = null;
+
+    function readBack() {
+      if (!check || !emailField) return;
+      var value = emailField.value.trim();
+      if (!value || value.indexOf('@') < 1) { check.hidden = true; shown = null; return; }
+      if (shown === value) { check.hidden = false; return; }
+      shown = value;
+      check.hidden = false;
+      var fix = suggest(value);
+      if (fix) {
+        check.textContent = '';
+        check.appendChild(document.createTextNode('Did you mean '));
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'wya-link';
+        b.setAttribute('data-fix', '');
+        b.textContent = fix;
+        check.appendChild(b);
+        check.appendChild(document.createTextNode('?'));
+      } else {
+        check.textContent = 'Is this your email? ' + value;
+      }
+    }
+
+    if (emailField) {
+      emailField.addEventListener('input', readBack);
+      emailField.addEventListener('blur', readBack);
+    }
+
+    check && check.addEventListener('click', function (e) {
+      var fix = e.target.getAttribute && e.target.getAttribute('data-fix') !== null
+        ? e.target : null;
+      if (!fix || !emailField) return;
+      emailField.value = fix.textContent;
+      shown = null;
+      readBack();
+      emailField.focus();
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var value = function (name) {
+        var el = form.querySelector('[name="' + name + '"]');
+        return el ? el.value.trim() : '';
+      };
+      var btn = form.querySelector('button[type=submit]');
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending'; }
+
+      var email = value('EMAIL');
+      var name  = value('FIRSTNAME');
+      var trap  = value('email_address_check');
+      var wants = form.querySelector('[name="OPT_IN"]');
+
+      // Her answer goes out either way. Joining the list only happens if she
+      // asked for it, and that one still needs her to confirm.
+      var jobs = [
+        fetch('/api/where-you-are', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            email: email,
+            firstName: name,
+            picks: answers.map(function (a) { return a.value; }),
+            trap: trap
+          })
+        }).catch(function () {})
+      ];
+      if (wants && wants.checked) {
+        jobs.push(fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ email: email, firstName: name, trap: trap })
+        }).catch(function () {}));
+      }
+
       var b = band(total());
       var head = root.querySelector('[data-outcome-head]');
       var line = root.querySelector('[data-outcome-line]');
+      var sent = root.querySelector('[data-sent-to]');
       if (head) head.textContent = b.head;
       if (line) line.textContent = b.line;
-      sendAnswers();
-      setTimeout(function () { show(10); }, 150);
-    });
-  }
+      if (sent && email) {
+        sent.hidden = false;
+        sent.textContent = 'Sent to ' + email + '. Not right? Start again and use the correct one.';
+      }
 
-  // The post above puts her on Jaimie's list. This one asks the worker to send
-  // her the outcome email. Only the eight option numbers go over, never the
-  // wording, so the worker can rebuild her answers from its own copy.
-  function sendAnswers() {
-    var value = function (name) {
-      var field = form.querySelector('[name="' + name + '"]');
-      return field ? field.value : '';
-    };
-    if (!window.fetch) return;
-    fetch('/api/where-you-are', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        email: value('EMAIL').trim(),
-        firstName: value('FIRSTNAME').trim(),
-        picks: answers.map(function (a) { return a.value; }),
-        trap: value('email_address_check')
-      })
-    }).catch(function () { /* she has the state on screen either way */ });
+      Promise.all(jobs).then(function () { show(10); }, function () { show(10); });
+    });
   }
 
   show(0);

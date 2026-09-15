@@ -944,3 +944,11 @@ textarea { min-height: 150px; resize: vertical; }
 .tight .hero { padding-block: calc(var(--pad-y) * 0.55) calc(var(--pad-y) * 0.5); }
 .label-fine { font-size: 11px; letter-spacing: 0.14em; }
 .pull-line-sm { font-size: 26px; max-width: 30ch; }
+
+/* Reading her own address back before she sends it. One real answer bounced
+   because the address did not exist and nobody found out for a day. */
+.wya-check {
+  margin: -0.25rem 0 0; font-size: 15px; line-height: 1.5;
+  color: var(--charcoal-muted);
+}
+.wya-sent { margin: 1.5rem 0 0; font-size: 15px; color: var(--charcoal-muted); }

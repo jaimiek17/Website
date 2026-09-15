@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=46">
+<link rel="stylesheet" href="/css/site.css?v=47">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -154,7 +154,7 @@
       <p class="wya-progress">Last step</p>
       <h2 class="wya-q">Where should I send it?</h2>
       <p class="muted">Your full answer, what it means, and what to do with it. I&rsquo;ll send it now.</p>
-      <form class="form" method="post" action="https://7f266e76.sibforms.com/serve/MUIFAFq9JfHLbz8PKm9R5693pcKt6mTHN5ppTm1BiDsnatUCHiVQhvilxXiOLpNiUB-Bc0-H_YSqawGWTnNxls78T8hUSCXfurFJeOZUSNMBidjzckuJMzpHZRm6f-n_c8AScrWcQdq595gTw2ASNI-eWIRQiXdfiXtvPXEvRhl_UGP0WtK0xhxULhznNtcY4101XXpSLv51y7-gaQ==" data-wya-form>
+      <form class="form" data-wya-form>
         <div>
           <label for="wya-name">First name</label>
           <input id="wya-name" name="FIRSTNAME" type="text" autocomplete="given-name" required>
@@ -163,6 +163,7 @@
           <label for="wya-email">Email</label>
           <input id="wya-email" name="EMAIL" type="email" autocomplete="email" required>
         </div>
+        <p class="wya-check" data-email-check hidden></p>
         <p class="wya-consent">
           <label for="wya-consent">
             <input id="wya-consent" name="OPT_IN" type="checkbox" value="1">
@@ -182,6 +183,7 @@
     <div class="wya-screen" data-step="10" hidden>
       <h2 class="wya-outcome-head" data-outcome-head></h2>
       <p class="lede" data-outcome-line></p>
+      <p class="wya-sent" data-sent-to hidden></p>
       <p class="wya-again">
         <button class="wya-link" type="button" data-again>Start again</button>
         <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
@@ -235,7 +237,7 @@
     </div>
   </div>
 </footer>
-<script src="/js/site.js?v=46"></script>
-<script src="/js/where-you-are.js?v=46"></script>
+<script src="/js/site.js?v=47"></script>
+<script src="/js/where-you-are.js?v=47"></script>
 </body>
 </html>

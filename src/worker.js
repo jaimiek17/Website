@@ -205,18 +205,22 @@ async function handleConfirm(request, env, ctx) {
 
   // Clicking twice should not send the deck twice. A woman whose first tap
   // looks like it failed will tap again, and two identical emails is sloppy.
-  // Already being on the list is the record that she has confirmed before.
-  var alreadyOn = false;
-  if (ids) {
-    var look = await fetch('https://api.brevo.com/v3/contacts/' +
-        encodeURIComponent(read.email), {
-      headers: { 'api-key': env.BREVO_API_KEY, accept: 'application/json' }
-    });
-    if (look.ok) {
-      var known = await look.json();
-      var on = known && known.listIds ? known.listIds : [];
-      alreadyOn = ids.some(function (id) { return on.indexOf(id) !== -1; });
-    }
+  //
+  // Existing as a contact is the record that she has confirmed before, since
+  // asking for the deck only sends an email and creates nothing. Checked by
+  // existence rather than list membership, because the earlier version only
+  // ran when a list could be resolved and quietly did nothing when it could
+  // not, which is how three clicks produced three emails.
+  var seenBefore = false;
+  var look = await fetch('https://api.brevo.com/v3/contacts/' +
+      encodeURIComponent(read.email), {
+    headers: { 'api-key': env.BREVO_API_KEY, accept: 'application/json' }
+  });
+  if (look.ok) {
+    seenBefore = true;
+  } else if (look.status !== 404) {
+    var why = await look.text();
+    console.log('contact lookup failed', look.status, why.slice(0, 200));
   }
 
   var body = {
@@ -247,7 +251,7 @@ async function handleConfirm(request, env, ctx) {
 
   // She is already on her way to the page. The same links go to her inbox so
   // she can find them again after she closes the tab, but only the first time.
-  if (!alreadyOn) {
+  if (!seenBefore) {
     var deck = sendMail(env, read.email, read.firstName, sub.deckEmail(read.firstName), ['deck'])
       .then(function (r) {
         if (!r.ok) return r.text().then(function (d) {

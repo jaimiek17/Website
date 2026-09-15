@@ -202,6 +202,23 @@ async function handleConfirm(request, env, ctx) {
   }
 
   var ids = await listIds(env);
+
+  // Clicking twice should not send the deck twice. A woman whose first tap
+  // looks like it failed will tap again, and two identical emails is sloppy.
+  // Already being on the list is the record that she has confirmed before.
+  var alreadyOn = false;
+  if (ids) {
+    var look = await fetch('https://api.brevo.com/v3/contacts/' +
+        encodeURIComponent(read.email), {
+      headers: { 'api-key': env.BREVO_API_KEY, accept: 'application/json' }
+    });
+    if (look.ok) {
+      var known = await look.json();
+      var on = known && known.listIds ? known.listIds : [];
+      alreadyOn = ids.some(function (id) { return on.indexOf(id) !== -1; });
+    }
+  }
+
   var body = {
     email: read.email,
     updateEnabled: true,
@@ -229,16 +246,18 @@ async function handleConfirm(request, env, ctx) {
   }
 
   // She is already on her way to the page. The same links go to her inbox so
-  // she can find them again after she closes the tab.
-  var deck = sendMail(env, read.email, read.firstName, sub.deckEmail(read.firstName), ['deck'])
-    .then(function (r) {
-      if (!r.ok) return r.text().then(function (d) {
-        console.log('deck send failed', r.status, d.slice(0, 400));
-      });
-    })
-    .catch(function (err) { console.log('deck send threw', String(err).slice(0, 200)); });
+  // she can find them again after she closes the tab, but only the first time.
+  if (!alreadyOn) {
+    var deck = sendMail(env, read.email, read.firstName, sub.deckEmail(read.firstName), ['deck'])
+      .then(function (r) {
+        if (!r.ok) return r.text().then(function (d) {
+          console.log('deck send failed', r.status, d.slice(0, 400));
+        });
+      })
+      .catch(function (err) { console.log('deck send threw', String(err).slice(0, 200)); });
 
-  if (ctx && ctx.waitUntil) ctx.waitUntil(deck); else await deck;
+    if (ctx && ctx.waitUntil) ctx.waitUntil(deck); else await deck;
+  }
 
   return Response.redirect(sub.DECK, 302);
 }

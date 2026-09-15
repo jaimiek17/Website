@@ -13,6 +13,7 @@ finished copy.
 | `2-picture-lead.html` | An issue built around a card, a photo, or a page. |
 | `3-notes.html` | A short issue. Three observations, no essay. |
 | `4-with-an-offer.html` | Rare. The idea is still given away in full first. |
+| `5-rust-issue.html` | The column again with a rust band. Alternate it for variety. |
 
 ## Building it once in Brevo
 
@@ -40,8 +41,29 @@ it as a template, duplicate it every issue.
   padding 14px 26px
 
 **Rules and quotes**
-- Hairline: 1px, `#E8D7D1`
-- Pull quote: a 2px `#D11371` bar on the left, text Georgia italic 21px
+- Hairline: 1px, `#E6D3CA`, a rust tinted warm grey
+- Pull quote: a 3px rust `#B5613A` bar on the left, text Georgia italic 21px
+- Numbered items: the numeral in Georgia italic 30px, rust `#B5613A`
+- Image frame: 1px dashed rust `#B5613A` on `#F3E7E1`
+
+**Where the rust goes, and why only there**
+
+Rust `#B5613A` reaches 4.3 to 1 against the paper background. AA asks for 4.5
+on small text and 3.0 on large text and shapes. So rust holds the structure
+and never carries small type:
+
+- Yes: rules, the pull quote bar, the image frame, large numerals, the band
+- No: the eyebrow, subheadings, body text, links, anything under 24px
+
+That is the same rule the website already follows, where rust is described as
+structure only: numbers, rings, bullets, arrows. The contrast maths agrees
+with it.
+
+**Alternating the band**
+
+Swap the top band between the pink foil and the rust band from issue to issue.
+The eyebrow, signature and buttons stay pink either way, so it still reads as
+one sender. Changing more than the band starts to look like two brands.
 
 Fraunces and Archivo are the website fonts. Email clients cannot be relied on
 to load either, so Georgia and Helvetica stand in. They are the same fallbacks

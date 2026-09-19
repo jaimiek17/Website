@@ -1,0 +1,4594 @@
+{
+ "1": [
+  {
+   "t": "rect",
+   "x": 0.0,
+   "y": 0.0,
+   "w": 612.0,
+   "h": 792.0,
+   "op": "f*",
+   "lw": 1,
+   "stroke": "#000000",
+   "fill": "#F4EFE7"
+  },
+  {
+   "t": "rect",
+   "x": 54.0,
+   "y": 43.0,
+   "w": 504.0,
+   "h": 706.0,
+   "op": "S",
+   "lw": 2.0,
+   "stroke": "#F4EFE7",
+   "fill": "#F4EFE7"
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 702.0,
+   "font": "F1",
+   "size": 9.0,
+   "color": "#323232",
+   "text": "A GUIDED SELF-AUDIT WORKBOOK · BY JAIMIE K"
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 552.0,
+   "font": "F2",
+   "size": 64.0,
+   "color": "#323232",
+   "text": "YOU LEFT"
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 482.0,
+   "font": "F2",
+   "size": 64.0,
+   "color": "#323232",
+   "text": "YOURSELF"
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 412.0,
+   "font": "F2",
+   "size": 64.0,
+   "color": "#D11371",
+   "text": "OUT"
+  },
+  {
+   "t": "line",
+   "x1": 80.0,
+   "y1": 474.6,
+   "x2": 300.0,
+   "y2": 474.6,
+   "w": 1.0,
+   "color": "#D11371"
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 352.0,
+   "font": "F3",
+   "size": 20.0,
+   "color": "#323232",
+   "text": "Now it's time to put yourself back in."
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 302.0,
+   "font": "F1",
+   "size": 12.0,
+   "color": "#323232",
+   "text": "For the woman in the messy middle. The one whose life has"
+  },
+  {
+   "t": "text",
+   "x": 80.0,
+   "y": 284.0,
+   "font": "F1",
+   "size": 12.0,
+   "color": "#323232",
+   "text": "stopped looking like her. The map. The protocol. The way back in."
+  },
+  {
+   "t": "rect",
+   "x": 0.0,
+   "y": 21.0,
+   "w": 612.0,
+   "h": 8.0,
+   "op": "f*",
+   "lw": 1.0,
+   "stroke": "#D11371",
+   "fill": "#D11371"
+  }
+ ],
+ "2": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "BEFORE YOU START"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 669.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You're not here because you forgot who you are. You're here because you built a life around the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 652.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "version of you that didn't know any better yet. And now the life doesn't fit."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 625.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You did everything you were supposed to do. Built the life, played the roles, kept going, held it together."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 608.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "And somewhere along the way you stopped feeling connected to the woman living it. Now it feels blah."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 591.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You're performing instead of participating."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 564.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This isn't more inner work. You've done inner work. You've read the books, sat with the feelings, grown."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 547.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That part is handled."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 520.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "What hasn't been handled is the actual life. The roles. The schedule. The relationships. The work. The"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 503.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "way you show up and speak. Those things were built by earlier versions of you, and they sit exactly"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 486.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "where you built them until you go back in and move them."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 459.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's what this workbook is. Going back in. Moving things."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 432.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "How to use it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 405.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Read Part One in one sitting. About 40 minutes. Do the diagnostic in Chapter 4. Ten minutes. Be"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 388.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "honest. Lying to yourself here means you finish holding a map that doesn't reflect your actual life."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 361.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Read Part Two over the next few days. Do the scan one area at a time. Half an hour each. By the end"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 344.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "of the week you'll have a complete Misalignment Map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 317.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Read Part Three. Pick your first move. Do it within 48 hours. Read Part Four after you've held the move"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 300.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "for at least a week."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 273.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You finish this workbook when one thing in your actual life has changed. Not a reinvention. Not a new"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 256.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you. One specific thing you can point to and say that's mine now."
+  }
+ ],
+ "3": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "ONE THING BEFORE WE START."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 669.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This isn't for everyone, and I'd rather you know now than on page 20."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 642.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you're looking for a morning routine, a manifestation practice, or the next self-improvement plan to"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 625.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "install, this will frustrate the hell out of you. This book removes. It doesn't add."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 598.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is for the woman who's done renting her life from everyone else's expectations. Who's ready to"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 581.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "find out which parts of the life she built are actually hers."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 554.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If that's you, keep going."
+  }
+ ],
+ "4": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "CONTENTS"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 669.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Before You Start"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 646.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "PART ONE — SEE IT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 623.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "01. You didn't lose yourself. You left yourself out."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 600.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "02. How the misfit actually happened."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 577.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "03. The seven places it shows up."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 554.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "04. Where you are right now."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 531.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "PART TWO — FIND IT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 508.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "05. Your voice vs. the voice you learned."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 485.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "06. The receipts."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 462.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "07. The Misalignment Map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 439.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "PART THREE — MOVE IT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 416.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "08. Thinking about it won't move it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 393.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "09. The one-move method."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 370.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "10. When 'you' feels blurry."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 347.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "PART FOUR — STAY IN IT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 324.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "11. When you slip back into performing."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 301.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "12. The 30-day check."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 278.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "13. When advice tries to pull you out."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 255.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "14. The standard going forward."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 232.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "WORKSHEETS"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 209.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The Diagnostic · The Receipts · The Misalignment Map · The One-Move Protocol · The 30-Day Check ·"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 192.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The Advice Filter"
+  }
+ ],
+ "5": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 01"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "You didn't lose yourself."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "You left yourself out."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Here's what actually happened."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 584.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You built a life. You didn't know much yet, so you did what every smart woman does. You watched."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 567.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You learned. You became who each season required. The good daughter. The reliable one. The wife."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 550.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The mom. The one who holds it together."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 523.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "And honestly? It kind of worked. You built the life. Checked the boxes. People are proud of you."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 496.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Then something shifted. You grew. Not in the surface way. The real way. You got clearer on what you"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 479.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "actually think, what you actually want, how you actually want to live. You became more yourself."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 452.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "But your life didn't move with you."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 425.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The life is still shaped by the version of you that didn't know any better yet. The roles are her roles. The"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 408.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "schedule is her schedule. The way you answer 'how are you' is the answer you learned to give. There's"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 391.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "a name for this gap. Identity Lag. You changed first. Your life hasn't caught up yet."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 364.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You walk through your own days and feel a small flinch. You look at your calendar and don't fully"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 347.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "recognize the woman it was built for. That's the misfit."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 320.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "It's not in your head. It's not a confidence issue. It's not because you haven't done enough inner work."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 303.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You built a life around yourself instead of with yourself."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 276.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is not a mindset problem. It's a structure problem. The foundation is you."
+  }
+ ],
+ "6": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you drew your life on a piece of paper right now. Every role. Every commitment. Your week. Your"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "closest people. The way you spend a Saturday. Would that drawing look like you? Don't answer fast."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 651.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Sit with it. Most women pause here. That pause is the reason you bought this."
+  }
+ ],
+ "7": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 02"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "How the misfit"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "actually happened."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Nobody planned this. You didn't make a wrong turn. You did what every honest, capable,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 594.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "willing-to-show-up woman does when she builds a life with no roadmap."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 567.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You absorbed."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 540.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "From your mother. From your marriage. From the church, the town, the friend group, the job. From who"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 523.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you had to be at 25. None of it was bad. It worked for the people who handed it to you. It worked the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 506.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "way it was designed to work."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 479.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The thing nobody told you is that other people's blueprints become your foundation if you let them. You"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 462.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "absorb them. You build on top of them. You forget you absorbed them. Twenty years later you can't tell"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 445.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "which parts of your life you actually chose and which parts you inherited."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 418.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's how the misfit happens. Not through one bad decision. Through a thousand small ones that"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 401.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "made sense at the time."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 374.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The other thing nobody told you is that the inner work won't fix this. You assumed it would. You thought"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 357.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "if you healed enough, the life would follow."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 330.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "It didn't follow. Lives don't follow. A life is a structure. Structures don't change because you became"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 313.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "someone new internally. They change when you go in and move the pieces."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 286.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's not a healing problem. That's a structure problem. You don't fix a structure with more journaling."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 269.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You fix it by looking at it and changing what's there."
+  }
+ ],
+ "8": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "What's one thing you do, one role you play, or one rule you live by that you've never actually"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "re-examined? The thing you do because someone you trusted handed it to you?"
+  }
+ ],
+ "9": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 03"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "The seven places"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "it shows up."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Misalignment doesn't live everywhere. It lives in specific places. We're not rebuilding your whole life."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 594.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "We're finding the places that aren't you."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 569.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "There are seven of them. These are the seven areas we're going to scan."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 544.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "1. Roles. Who you are to everyone else. And where you went in the process."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 519.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "2. Schedule. Whose life your days are actually built around. Check before you answer."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 494.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "3. Home. Your space knows which version of you lives there. Look around."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 469.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "4. Relationships. Some of these fit the woman you were. Not the one reading this."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 444.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "5. Work. What you do all day. Yours, or inherited?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 419.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "6. Body. How you show up, dress, care for yourself. And who it's actually for."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 394.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "7. Voice. What you say out loud vs. what you actually think. Mind the gap."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 369.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Most of the time, misalignment is hiding in three or four of these. The other three or four are actually"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 352.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "fine. Your job in the next few chapters is to figure out which is which."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 327.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Before you can do that, you need a way to tell what's you and what isn't. That's Chapter 5."
+  }
+ ],
+ "10": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Without thinking too hard, which of the seven areas do you already suspect is the most misaligned?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Trust the first answer."
+  }
+ ],
+ "11": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 04"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "Where you are right now."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 643.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Ten questions. Ten minutes. Rate each from 1 to 5. 1 = not me at all. 5 = completely me."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 618.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Be honest. Nobody's grading this. The only person hurt by inflating your answers is you, sitting with a"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 601.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "map next week that doesn't tell the truth."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 576.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "1. The roles you play every day. Do they feel like an extension of who you are, or a script you inherited"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 559.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "and kept performing?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 538.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 512.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "2. Your days. Are they built around how your energy actually works, or around everyone else's needs"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 495.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "first?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 474.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 448.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "3. Your home. Does it look like the woman you are now, or the woman who set it up years ago?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 427.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 401.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "4. Your closest relationships. Would you choose each one today, or are some kept alive by history and"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 384.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "habit?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 363.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 337.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "5. Your work. Is it yours, or the thing you fell into and never re-chose?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 316.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  }
+ ],
+ "12": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 703.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "6. The way you dress and present yourself. Is it you, or who you're supposed to be at this age, in this"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 686.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "town, in this family?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 665.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 639.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "7. What you say out loud. Does it match what you actually think, or has editing yourself become"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 622.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "automatic?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 601.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 575.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "8. Your yes. Do you say yes because you want to, or because you always have?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 554.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 528.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "9. Your free time. When a Saturday opens up, does it get spent on you, or on leftovers?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 507.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 481.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "10. The life itself. When you move through your day, does it feel like yours, or like running a life"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 464.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "someone else designed?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 443.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score (1-5):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 411.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Total ( / 50):"
+  }
+ ],
+ "13": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "HOW TO READ YOUR SCORE"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 669.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "40 to 50"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 642.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Your life mostly looks like you. You probably didn't need this workbook for the whole life. The method"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 625.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "still applies to any structure. Your next season, your next role, the one area that still itches. Keep going"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 608.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "for that."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 581.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "25 to 39"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 554.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Some of your life is you. Some of it isn't. You're in the most common spot. This is the messy middle,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 537.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "and the rest of this workbook is built for exactly where you are."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 510.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "10 to 24"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 483.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Most of your life was built around someone else. This isn't a judgment. It's data. There's a lot to move,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 466.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "but you can see most of it from where you're sitting now. That's actually a clean place to start."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 439.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Now do this. Underneath your total, write down the three questions you scored lowest on. Those are"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 422.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "the first three places we're going to look in Part Two."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 395.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The three lowest:"
+  }
+ ],
+ "14": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 05"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "Your voice vs."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "the voice you learned."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Before you can map what's yours and what isn't, you need a way to tell the difference. Most women"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 594.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "can't, and it's not their fault. You've absorbed so many voices, rules, and roles over the years that"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 577.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you've lost track of which thoughts are originally yours."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 550.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Here's the test that works. For each piece of your life, ask:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 523.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Where did this come from?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 496.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Not do I like it. Not does it feel right. Those questions are too easy to bullshit."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 469.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you can name where it came from. Your mother, your marriage, your church, who you were at 25."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 452.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's not necessarily wrong. But it came from outside you, and you need to actively decide whether"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 435.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you'd still build it the same way without that source."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 408.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you can't name the source, either it's actually yours, or you've absorbed it so deeply you've forgotten."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 391.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Push harder. When did you start doing it this way? Who were you around? What season were you in?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 364.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "A few examples from my own life. I kept a schedule built entirely around being available to everyone. I"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 347.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "told myself I liked being the reliable one. The truth was I'd inherited it from the version of me that"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 330.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "needed to be needed. When I sat with what my week would look like without that inheritance, it looked"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 313.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "different."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 286.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "I answered 'how are you' with 'good, busy' for years. Nothing in that answer was mine. It was the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 269.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "answer that kept every conversation comfortable."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 242.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "None of this makes the people who shaped you wrong. It just wasn't you."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 215.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's the test. Not is this good. Is this mine."
+  }
+ ],
+ "15": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Pick one piece of your life. Any piece. Ask where it came from. Don't move on until you've named the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "source or sat with the fact that you can't find one."
+  }
+ ],
+ "16": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 06"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "The receipts."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 643.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is where you start making a list."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 616.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Take the three questions you scored lowest on in Chapter 4. For each one, identify the specific piece of"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 599.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "your life it points to. The role. The commitment. The relationship. The rule. Be specific. Not 'my"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 582.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "schedule in general.' The actual Tuesday obligation. The actual answer you give. The actual person."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 555.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Then for each piece, fill in: when you first started doing it this way. The source it most likely came from."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 538.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "What you'd do differently if it had never been handed to you. Whether it's still right for you now."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 511.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is the receipts work. You're naming the inheritance. Not so you can be mad about it. So you can"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 494.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "see it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 467.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Most women resist this because it feels like blaming their mother, or their marriage, or admitting they"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 450.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "didn't think for themselves. None of that's true."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 423.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You weren't weak for absorbing what you absorbed. You were becoming. That's how it works. The"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 406.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "problem isn't that you absorbed. The problem is that the season that required it ended years ago and"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 389.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "the life still operates like it didn't."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 362.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Writing it down is how it ends. You can't move what you can't see, and you can't see it until you name"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 345.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "where it came from."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 318.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Use Worksheet 2 in the back. Fill it in for all three pieces before moving on."
+  }
+ ],
+ "17": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Of your three pieces, which one are you most reluctant to write down the source for? That's usually the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "one to write down first."
+  }
+ ],
+ "18": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 07"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "The Misalignment Map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 643.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is the artifact. The piece of paper you'll be holding when this workbook ends."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 616.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "On one page, you fill in seven boxes. One for each area. Each box has two halves."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 589.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "LEFT SIDE: What this looks like in my life right now."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 562.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "RIGHT SIDE: What this would look like if it were shaped by me, not by what I absorbed."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 535.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The right side might look almost identical to the left. That's fine. It means this area is already you. The"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 518.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "space between the two sides, across all seven areas, is the work."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 491.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "A few things before you fill it in. The right side is not your fantasy version. Not the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 474.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "run-away-to-a-new-city version. It's the smallest, most honest answer to: what would I do here if no one"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 457.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "had told me how?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 430.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you can't fill in the right side for an area, leave it blank. Chapter 10 is for that."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 403.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Don't change anything in your life yet. We're still seeing."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 376.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Do one area per sitting. Half an hour each. You'll have the full map within a week. Fill it in by hand if"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 359.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you can. Typing makes this feel like a planning exercise, and it isn't. This is closer to a confession than"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 342.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "a spreadsheet."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 315.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "When the map is complete, look at it for a long time. Don't analyze it. Just look."
+  }
+ ],
+ "19": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "After you've filled in the map, which gap is the biggest? Which is the smallest? The smallest one is"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "where we start. Not the biggest."
+  }
+ ],
+ "20": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 08"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "Thinking about it"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "won't move it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "I want to say this directly because it's where I lost months on my own version of this work."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 584.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You can spend a long time analyzing the map. Thinking about it. Journaling about it. Talking it through"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 567.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "with your friend who gets it. You can make the map more detailed. You can color-code it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 540.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "None of that moves the map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 513.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The map gets moved by a thing you do in the life. A standing commitment cancelled. A true answer"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 496.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "given out loud. A drawer cleared. A Tuesday left empty because Tuesday is the day your energy"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 479.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "collapses."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 452.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Small actions. Specific. Visible. Done by Friday."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 425.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This sounds obvious. I'm saying it anyway because the trap of this kind of work is that you can spend a"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 408.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "year mapping and remapping and feeling like you're doing the work. The map is not the work. The map"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 391.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "is the diagnostic. The work is moving one thing."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 364.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You're not going to think your way out of this. You're not going to journal your way out of it either."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 347.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You're going to do one thing."
+  }
+ ],
+ "21": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Right now, looking at your map, what's the smallest thing you could move this week? Not the biggest."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The smallest. The one you could finish by Friday."
+  }
+ ],
+ "22": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 09"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "The one-move method."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 643.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The protocol is small enough that your nervous system can handle it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 619.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "1. Look at your map. 2. Pick one item where the gap between LEFT and RIGHT is small. Not your"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 602.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "biggest misalignment. Your smallest. 3. Identify the smallest action that would close that gap by 20"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 585.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "percent. Not 100. Twenty. 4. Schedule it for the next 48 hours. 5. Do it. 6. Hold it. Don't change"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 568.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "anything else for seven days. 7. After seven days, return to the map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 544.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Why this works. Most women try to reinvent, relocate, or burn-it-all-down their way to a life that fits."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 527.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Your body doesn't trust that. Your body knows what comes after a big move. Three weeks of"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 510.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "high-functioning, then a crash, then a quiet return to the old shape."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 486.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Your body trusts small. It trusts repeatable. It trusts: I'm going to move this one thing and see what"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 469.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "happens."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 445.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "A few examples of small moves."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 421.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Cancel the standing commitment you dread, and replace it with nothing"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 397.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Answer 'how are you' with the true answer, once, to one safe person"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 373.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Clear one shelf or drawer that belongs to a version of you that's gone"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 349.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Say no without an explanation attached. Once."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 325.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Take back one hour on the calendar and put nothing in it"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 301.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Wear the thing you keep saving for a version of your life that never arrives"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 277.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": " Tell one person one true thing you've been editing out"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 253.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Pick yours. Do it by Friday. Use Worksheet 4 in the back."
+  }
+ ],
+ "23": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The move you just picked. Are you 95 percent sure you'll actually do it? If you're less than that, pick a"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "smaller move. The point is to keep the promise, not to be impressive."
+  }
+ ],
+ "24": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 10"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "When “you” feels blurry."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 643.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This chapter is for when you sit down to fill in the right side of the map and you don't know what you"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 626.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "would do."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 601.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is common. It doesn't mean you're broken. It means you've been so many versions for so many"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 584.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "people that you can't easily find the un-absorbed one. You're not lost. You're buried."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 559.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Three things help."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 534.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Look at the unperformed parts of your life."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 509.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "How you'd cook a meal you actually want to eat. What you do in the first ten minutes when the house is"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 492.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "finally empty. How you talk to the friend you've known longest. How you'd spend a Saturday with no"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 475.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "one to answer to. These places hold unstyled versions of how you operate. Watch them. Notice the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 458.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "patterns. Bring one back into the main life."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 433.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Strip the inputs."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 408.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "For 14 days, no self-improvement content. No podcasts telling you who to become. No feeds full of"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 391.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "women living louder. Read fiction. Walk. Cook. By the end of 14 days, when you sit down with the area"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 374.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you couldn't fill in, something usually surfaces. Your own thinking has space to come forward when"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 357.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "other people's thinking isn't filling the channel."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 332.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Ask a smaller question."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 307.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Instead of 'what would my life look like if it were truly me,' ask 'what's the next thing I would choose,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 290.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "knowing everything I know now, if I were starting today?' The big question has too many right answers,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 273.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "which is why your mind goes blank. The small one usually has one or two."
+  }
+ ],
+ "25": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Which of the three moves above is the one you don't want to do? That's usually the one you need most."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Probably the input strip."
+  }
+ ],
+ "26": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 11"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "When you slip back"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "into performing."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You will slip back. Someone will need you and you'll snap into the old role before you notice. You'll hear"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 594.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "about another woman's routine, her renovation, her reinvention, and immediately want to install her life"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 577.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "on top of yours. You'll spend two days becoming her before Wednesday morning, when the dopamine"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 560.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "wears off, you realize it isn't yours."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 533.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "This is normal. The pull to perform is stronger than the discipline to stay yourself, especially in"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 516.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "low-confidence weeks. You don't fix it by being harder on yourself."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 489.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The repair is short."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 462.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "1. Notice it. 'I just spent two days rearranging my life after one conversation.' 2. Stop. Don't undo"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 445.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "anything yet. 3. Look at your map. 4. Ask: does what I started doing close a gap on my map, or create a"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 428.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "new one? 5. If it creates one, set it down. It was a performance, not a move. 6. If it closes one, keep it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 401.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The script when you catch yourself mid-slip:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 374.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "I noticed I started [the thing] after [the trigger]. I'm going to wait three days. If I still want it, and it closes"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 357.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "a gap on my map, I'll continue. If not, I'll let it go."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 330.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "No drama. No 'I'm so bad at this.' Just the protocol."
+  }
+ ],
+ "27": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Which person or input, when you're around them, most reliably pulls you back into the old role? Naming"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "them is half the work."
+  }
+ ],
+ "28": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 12"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "The 30-day check."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 643.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The check takes ten minutes. Do it on the same day every month."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 618.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Five questions."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 593.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "1. What did I add to my life in the last 30 days?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 568.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "2. Of those things, what looks like me?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 543.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "3. What got added because someone expected it and I reacted?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 518.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "4. What's one thing I want to move on the map this month?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 493.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "5. What's one thing that's now actually closed?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 468.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Write the answers down. Save them somewhere you'll see them."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 443.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "After three rounds of this, you'll see a pattern. The pattern is more useful than any new plan. For most"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 426.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "women, the pattern is one specific input. A particular person, a particular feed, a particular room they"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 409.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "walk into. Something that consistently pulls them out of their own life. Once you can name it, you can"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 392.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "decide what to do about it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 367.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Use Worksheet 5 in the back."
+  }
+ ],
+ "29": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you did this check today, what's the one thing you'd write down as having been added because"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "someone expected it and you reacted?"
+  }
+ ],
+ "30": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 13"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "When advice tries"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "to pull you out."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The hardest part of staying inside your own life is other people's confidence."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 584.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Someone will tell you, very surely, what you should do. Your mother. Your sister. The friend whose life"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 567.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "looks sorted. They will be right that it works. For someone. They will not know that it isn't you. You'll"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 550.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "hear the certainty in their voice and start to doubt the map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 523.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "And here's the complicated part. Some of these people are invested in the old version of you. Not"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 506.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "maliciously. The old you was convenient. She said yes. She held things together. When you move, their"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 489.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "life moves too, and some advice is really a request to move back."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 462.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The protocol."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 435.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "1. Acknowledge it's probably good advice. For someone. 2. Note the source. Is this a person whose life"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 418.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "looks like yours wants to? Or someone comfortable with who you were? 3. Run it against your map."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 401.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Does adopting it close a gap or create one? 4. If it closes a gap, adopt it. 5. If it creates one, say thank"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 384.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you and don't. You don't owe an explanation. You don't need to be right about why."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 357.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You will disappoint some people by declining good advice. You will gain a life that looks like you. That"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 340.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "is the trade. There's no version of this work that lets you say yes to everyone and still ends with your"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 323.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "life being yours."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 296.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Use Worksheet 6 in the back for advice you're not sure what to do with."
+  }
+ ],
+ "31": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 705.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "DIAGNOSTIC PROMPT"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 685.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "What's one piece of advice you've adopted recently that you're now not sure about? Run it through the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 668.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "filter."
+  }
+ ],
+ "32": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "CHAPTER 14"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "The standard"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 658.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "going forward."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 611.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You're done with this workbook when you can ask yourself one question and answer it honestly."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 584.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If I drew my life on a piece of paper today, would it look like me?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 557.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Some of you, having done the work, can now answer yes, mostly. A few gaps remain. That's fine. You"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 540.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "have the protocol. You move one piece at a time. The map stays current. The check happens monthly."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 513.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You won't reach perfect alignment. That's not the goal. An aligned life isn't a life with no discomfort and"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 496.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "no challenges. It's a life where you know your hell yes and your hell no, and where the parts that aren't"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 479.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "you are parts you've chosen. Not parts you absorbed."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 452.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The standard isn't does this feel good. The standard is does this look like me on paper. The feel-good"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 435.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "question is too easy to manipulate. The looks-like-me question is harder to dodge. That's why we use it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 408.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "And remember what this season actually is. Life has a way of stripping us back. Heartbreak, burnout,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 391.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "loss, outgrowing. Whether you wanted it or not. You're not starting over. You're starting fresh, from"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 374.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "what's actually there."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 347.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You have everything you need."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 320.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You didn't lose yourself. You just left yourself out. Now you're back in."
+  }
+ ],
+ "33": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 727.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "BEFORE YOU GO"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 690.2,
+   "font": "F2",
+   "size": 26.0,
+   "color": "#323232",
+   "text": "What the map can't do."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 633.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Here's what I need to be honest about before you close this."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 606.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The map shows you what isn't yours. It's damn good at that. You now know which roles you inherited,"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 589.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "which commitments you absorbed, which voice you've been answering in that was never yours."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 562.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "But the map has a limit. It can show you what to remove. It can't show you what was underneath the"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 545.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "whole time."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 518.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "That's not a workbook job. That's a mirror job."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 491.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Because here's what happens to some women after this work: they strip out what isn't theirs and hit a"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 474.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "question the map can't answer. “Okay... so who's actually left?”"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 447.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If you hit that question, you're not doing it wrong. You've just reached the part that needs a second set"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 430.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "of eyes. Someone reading your actual blueprint, not your absorbed one, and naming the pattern you"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 413.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "can't see because you're standing inside it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 386.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's the Pre-Work Intensive. 90 minutes, 1:1. Your blueprint through Human Design and astrology."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 369.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Your pattern named. One real move that's yours by design, not by inheritance."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 336.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The workbook put you back in your life."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 319.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The Intensive shows you who “you” actually is."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 292.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Book it: Jaimiek17@gmail.com"
+  }
+ ],
+ "34": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 426.4,
+   "font": "F2",
+   "size": 32.0,
+   "color": "#323232",
+   "text": "WORKSHEETS"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 392.4,
+   "font": "F1",
+   "size": 12.0,
+   "color": "#323232",
+   "text": "Fill these in by hand if you can."
+  }
+ ],
+ "35": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 1 · THE DIAGNOSTIC"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 683.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Score each from 1 to 5. 1 = not me at all. 5 = completely me. Be honest."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 656.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "1. The roles you play every day — you, or an inherited script?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 629.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "2. Your days — built around your energy, or everyone else's needs?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 602.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "3. Your home — the woman you are now, or the one who set it up?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 575.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "4. Your closest relationships — chosen today, or kept by habit?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 548.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "5. Your work — yours, or fallen into and never re-chosen?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 521.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "6. How you dress and present — you, or who you're supposed to be?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 494.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "7. What you say out loud — matches what you think, or auto-edited?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 467.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "8. Your yes — wanted, or automatic?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 440.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "9. Your free time — yours, or leftovers?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 413.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "10. The life itself — yours, or someone else's design?"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 380.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Total ( / 50):"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 354.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The three questions I scored lowest on:"
+  }
+ ],
+ "36": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 2 · THE RECEIPTS — PIECE 1"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 673.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Area:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 602.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The specific piece of my life this points to:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 531.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "When I first started doing it this way:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 460.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The source (person, season, place) I most likely got it from:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 389.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "What I would do differently if it had never been handed to me:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 318.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Is this still right for me?"
+  },
+  {
+   "t": "text",
+   "x": 222.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Yes"
+  },
+  {
+   "t": "text",
+   "x": 292.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "No"
+  },
+  {
+   "t": "text",
+   "x": 357.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Not sure"
+  }
+ ],
+ "37": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 2 · THE RECEIPTS — PIECE 2"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 673.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Area:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 602.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The specific piece of my life this points to:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 531.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "When I first started doing it this way:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 460.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The source (person, season, place) I most likely got it from:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 389.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "What I would do differently if it had never been handed to me:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 318.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Is this still right for me?"
+  },
+  {
+   "t": "text",
+   "x": 222.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Yes"
+  },
+  {
+   "t": "text",
+   "x": 292.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "No"
+  },
+  {
+   "t": "text",
+   "x": 357.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Not sure"
+  }
+ ],
+ "38": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 2 · THE RECEIPTS — PIECE 3"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 673.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Area:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 602.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The specific piece of my life this points to:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 531.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "When I first started doing it this way:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 460.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The source (person, season, place) I most likely got it from:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 389.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "What I would do differently if it had never been handed to me:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 318.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Is this still right for me?"
+  },
+  {
+   "t": "text",
+   "x": 222.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Yes"
+  },
+  {
+   "t": "text",
+   "x": 292.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "No"
+  },
+  {
+   "t": "text",
+   "x": 357.0,
+   "y": 317.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Not sure"
+  }
+ ],
+ "39": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 3 · THE MISALIGNMENT MAP"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 683.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Seven areas. Two halves each. The gap between LEFT and RIGHT, across all seven, is the work."
+  },
+  {
+   "t": "text",
+   "x": 184.0,
+   "y": 659.0,
+   "font": "F2",
+   "size": 10.0,
+   "color": "#D11371",
+   "text": "LEFT — what this looks like now"
+  },
+  {
+   "t": "text",
+   "x": 374.0,
+   "y": 659.0,
+   "font": "F2",
+   "size": 10.0,
+   "color": "#D11371",
+   "text": "RIGHT — if shaped by me"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 626.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "1. Roles"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 552.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "2. Schedule"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 478.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "3. Home"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 404.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "4. Relationships"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 330.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "5. Work"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 256.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "6. Body"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 182.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "7. Voice"
+  }
+ ],
+ "40": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 4 · THE ONE-MOVE PROTOCOL"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 683.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "One small move. One week. Don't change anything else."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 656.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "This week's move:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 585.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Which area on the map this addresses:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 514.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The smallest action that closes the gap by about 20 percent:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 443.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "By when:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 372.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "What I'm leaving alone for the next seven days:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 301.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Notes after seven days (what changed, what stayed, what I noticed):"
+  }
+ ],
+ "41": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 5 · THE 30-DAY CHECK"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 683.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Ten minutes. Same day every month. Write the answers down."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 656.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Date:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 628.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "1. What I added to my life in the last 30 days:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 557.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "2. What looks like me:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 486.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "3. What got added because someone expected it and I reacted:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 415.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "4. What I want to move on the map this month:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 344.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "5. What's actually closed now:"
+  }
+ ],
+ "42": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 715.4,
+   "font": "F2",
+   "size": 22.0,
+   "color": "#323232",
+   "text": "WORKSHEET 6 · THE ADVICE FILTER"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 683.2,
+   "font": "F3",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Run new advice through this before adopting it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 656.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "The advice:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 585.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "Who it came from:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 532.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Does their life look like what mine wants to be?"
+  },
+  {
+   "t": "text",
+   "x": 72.0,
+   "y": 512.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Yes"
+  },
+  {
+   "t": "text",
+   "x": 142.0,
+   "y": 512.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "No"
+  },
+  {
+   "t": "text",
+   "x": 207.0,
+   "y": 512.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Unsure"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 487.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Does adopting this close a gap on my map, or create one?"
+  },
+  {
+   "t": "text",
+   "x": 72.0,
+   "y": 467.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Close"
+  },
+  {
+   "t": "text",
+   "x": 152.0,
+   "y": 467.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Create"
+  },
+  {
+   "t": "text",
+   "x": 242.0,
+   "y": 467.0,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Unsure"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 442.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#D11371",
+   "text": "My decision:"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 369.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "If close: adopt it. If create: let it go. If unsure: wait 72 hours and run the filter again before doing"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 352.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "anything."
+  }
+ ],
+ "43": [
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 646.4,
+   "font": "F2",
+   "size": 32.0,
+   "color": "#323232",
+   "text": "THE WORK CONTINUES."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 603.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You now have the map. You have the protocol. You have the standard."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 576.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The misfit doesn't fix itself. You won't journal your way out of it. You won't manifest your way out of it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 559.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You won't read your way out of it."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 532.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "You move one thing. You hold it for a week. You check the map. You move the next thing."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 505.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "That's it. That's the whole work."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 478.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The life you want is the one that looks like you on paper. Not the one that feels good for an hour after a"
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 461.2,
+   "font": "F1",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "podcast. Not the one everyone else is comfortable with."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 434.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "The one that looks like you."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 407.2,
+   "font": "F2",
+   "size": 11.0,
+   "color": "#323232",
+   "text": "Go put yourself back in."
+  },
+  {
+   "t": "text",
+   "x": 54.0,
+   "y": 85.6,
+   "font": "F3",
+   "size": 8.0,
+   "color": "#888888",
+   "text": "YOU LEFT YOURSELF OUT © 2026 Jaimie K. All rights reserved."
+  }
+ ]
+}

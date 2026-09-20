@@ -304,8 +304,6 @@ DOCUMENT = [
     {"blocks": [
         H1("CONTENTS"),
         {"b": "toc", "items": [
-            ("Before You Start", "plain"),
-            ("How to Use This Guide", "plain"),
             ("PART ONE — SEE IT", "part"),
             ("01. You didn't lose yourself. You left yourself out.", "plain"),
             ("02. How the misfit actually happened.", "plain"),

@@ -19,8 +19,10 @@ Then the "By the end of this guide, you will have" box, then the four-step line:
 SEE IT, FIND IT, MOVE IT, STAY IN IT.
 
 **p5 · Contents** [v3 p4]
-Same list, with two lines added: How to Use This Guide, and One Real Example.
-No page numbers in the contents, so nothing else needed changing.
+Starts at PART ONE now. The "Before You Start" line is gone, at your ask, and
+"How to Use This Guide" came and went the same day. One Real Example is listed
+under Part Three. No page numbers in the contents, so nothing else needed
+changing.
 
 ## Part One
 

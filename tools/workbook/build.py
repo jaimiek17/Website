@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """Build the YOU LEFT YOURSELF OUT workbook.
 
-Two outputs, from one source:
+One output:
 
     python3 tools/workbook/build.py
 
-    dist/you-left-yourself-out.pdf         fillable, tagged, for screens
-    dist/you-left-yourself-out-print.pdf   same pages, ruled boxes instead of
-                                           form fields, for printing
+    dist/you-left-yourself-out.pdf   fillable, tagged
 
 The copy lives in content.py. Pages carried over from v3 unchanged live in
 pages.json as their original drawing instructions, so they come out exactly as
@@ -83,8 +81,7 @@ def wrap(text, font, size, width):
 
 
 class Builder:
-    def __init__(self, path, print_mode=False):
-        self.print_mode = print_mode
+    def __init__(self, path):
         self.c = canvas.Canvas(path, pagesize=(PAGE_W, PAGE_H))
         self.c.setTitle("You Left Yourself Out")
         self.c.setAuthor("Jaimie Kozyra")
@@ -172,9 +169,6 @@ class Builder:
     def text_field(self, name, tip, x, y, w, h, multiline=False, size=10):
         self.fields.append({"name": name, "type": "Text (multiline)" if multiline
                             else "Text", "tooltip": tip, "page": self.page_no})
-        if self.print_mode:
-            self.draw_box(x, y, w, h, color=GREY, width=0.5)
-            return
         self.c.acroForm.textfield(
             name=name, tooltip=tip, x=x, y=y, width=w, height=h,
             borderStyle="solid", borderWidth=0.5,
@@ -193,23 +187,15 @@ class Builder:
         self.group_tips[name] = tip
         for i, v in enumerate(values):
             bx = x + i * gap
-            if self.print_mode:
-                self._artifact_start()
-                self.c.setStrokeColor(HexColor(INK))
-                self.c.setLineWidth(0.7)
-                self.c.circle(bx + size / 2.0, y + size / 2.0, size / 2.0,
-                              stroke=1, fill=0)
-                self._artifact_end()
-            else:
-                self.c.acroForm.radio(
-                    name=name, tooltip="%s: %s" % (tip, labels[i]), value=v,
-                    x=bx, y=y, size=size, selected=False,
-                    buttonStyle="circle", shape="circle",
-                    borderStyle="solid", borderWidth=0.8,
-                    borderColor=HexColor(INK), fillColor=HexColor("#FFFFFF"),
-                    textColor=HexColor(ACCENT), forceBorder=True,
-                    fieldFlags="radio noToggleToOff",
-                )
+            self.c.acroForm.radio(
+                name=name, tooltip="%s: %s" % (tip, labels[i]), value=v,
+                x=bx, y=y, size=size, selected=False,
+                buttonStyle="circle", shape="circle",
+                borderStyle="solid", borderWidth=0.8,
+                borderColor=HexColor(INK), fillColor=HexColor("#FFFFFF"),
+                textColor=HexColor(ACCENT), forceBorder=True,
+                fieldFlags="radio noToggleToOff",
+            )
             self.draw_text(bx + size + 5, y + (size - label_size) / 2.0 + 1.5,
                            labels[i], REG, label_size, INK, role="Span")
 
@@ -638,8 +624,8 @@ def add_tags(path, builder):
 # ------------------------------------------------------------------ main ----
 
 
-def build(path, print_mode):
-    b = Builder(path, print_mode=print_mode)
+def build(path):
+    b = Builder(path)
     for page in C.DOCUMENT:
         b.start_page(chrome=page.get("chrome", True))
         b.render(page["blocks"])
@@ -652,11 +638,9 @@ def build(path, print_mode):
 def main():
     out_dir = os.path.join(HERE, "dist")
     os.makedirs(out_dir, exist_ok=True)
-    screen = os.path.join(out_dir, "you-left-yourself-out.pdf")
-    printable = os.path.join(out_dir, "you-left-yourself-out-print.pdf")
+    out = os.path.join(out_dir, "you-left-yourself-out.pdf")
 
-    b = build(screen, print_mode=False)
-    build(printable, print_mode=True)
+    b = build(out)
 
     with open(os.path.join(HERE, "form-fields.md"), "w") as fh:
         fh.write("# Form fields\n\n")
@@ -666,8 +650,7 @@ def main():
             fh.write("| %d | `%s` | %s | %s |\n"
                      % (f["page"], f["name"], f["type"], f["tooltip"]))
     print("%d pages, %d fields" % (b.page_no, len(b.fields)))
-    print(screen)
-    print(printable)
+    print(out)
 
 
 if __name__ == "__main__":

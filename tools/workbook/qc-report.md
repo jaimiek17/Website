@@ -21,6 +21,7 @@ Run against `dist/you-left-yourself-out.pdf`, 50 pages, 86 fields.
 | Typed text is dark and readable | ink #323232 on a near-white field |
 | Small grey text passes contrast | darkened to #5E5E5E, about 6.5:1 on white |
 | Nothing relies on colour alone | selected buttons show a filled dot, not just a colour |
+| Prints cleanly as it is | field boxes print as outlines, no separate print file needed |
 | v3 pages carried over unchanged | all 24 compared against the original, no differences |
 | Banned words | none added; three v3 instances left in place, listed in CHANGELOG.md |
 

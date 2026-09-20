@@ -11,11 +11,8 @@ pip install reportlab pikepdf
 python3 tools/workbook/build.py
 ```
 
-Out come two files in `dist/`:
-
-- `you-left-yourself-out.pdf` the fillable, tagged one you sell
-- `you-left-yourself-out-print.pdf` same pages, plain ruled boxes instead of
-  form fields, for anyone who wants to print it
+Out comes `dist/you-left-yourself-out.pdf`, the fillable, tagged file you sell.
+It prints fine as it is.
 
 It also rewrites `form-fields.md`, the list of every field in the file.
 
